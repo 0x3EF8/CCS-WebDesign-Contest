@@ -1,0 +1,140 @@
+/* Styles for content pages like Privacy Policy, Terms of Service, and Sitemap */
+.page-content {
+  padding: 120px 0 80px;
+  background-color: var(--dark-bg);
+}
+
+.content-wrapper {
+  background: rgba(30, 30, 30, 0.6);
+  border-radius: var(--border-radius);
+  padding: 40px;
+  margin-top: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.light-theme .content-wrapper {
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.content-wrapper h1 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: var(--light-text);
+  text-align: center;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.content-wrapper h1::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background-color: var(--primary-color);
+}
+
+.policy-section,
+.sitemap-section {
+  margin-bottom: 30px;
+}
+
+.policy-section h2,
+.sitemap-section h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: var(--primary-color);
+  position: relative;
+}
+
+.policy-section p,
+.sitemap-section p {
+  color: var(--gray-text);
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.policy-section ul,
+.sitemap-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 15px;
+}
+
+.policy-section ul li,
+.sitemap-list li {
+  color: var(--gray-text);
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 8px;
+}
+
+.sitemap-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.sitemap-list li {
+  margin-bottom: 12px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.sitemap-list li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: var(--primary-color);
+}
+
+.sitemap-list li a {
+  color: var(--gray-text);
+  transition: all var(--transition-speed);
+}
+
+.sitemap-list li a:hover {
+  color: var(--primary-color);
+  padding-left: 5px;
+}
+
+@media (max-width: 768px) {
+  .content-wrapper {
+    padding: 30px 20px;
+  }
+
+  .content-wrapper h1 {
+    font-size: 30px;
+  }
+
+  .policy-section h2,
+  .sitemap-section h2 {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .content-wrapper {
+    padding: 25px 15px;
+  }
+
+  .content-wrapper h1 {
+    font-size: 26px;
+  }
+
+  .policy-section h2,
+  .sitemap-section h2 {
+    font-size: 20px;
+  }
+
+  .policy-section p,
+  .sitemap-section p,
+  .policy-section ul li,
+  .sitemap-list li {
+    font-size: 14px;
+  }
+}
+

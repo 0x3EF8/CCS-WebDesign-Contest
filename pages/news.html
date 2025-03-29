@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>News | College of Computer Studies</title>
+
+<!-- Stylesheets -->
+<link rel="stylesheet" href="../css/main.css">
+<link rel="stylesheet" href="../css/header.css">
+<link rel="stylesheet" href="../css/footer.css">
+<link rel="stylesheet" href="../css/theme-switcher.css">
+<link rel="stylesheet" href="../css/chat-assistant.css">
+<link rel="stylesheet" href="../css/page-content.css">
+<link rel="stylesheet" href="../css/news.css">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- Loading Screen -->
+<div class="loading-screen" id="loadingScreen">
+  <div class="loader">
+      <div class="loader-circle"></div>
+      <div class="loader-text">Loading...</div>
+  </div>
+</div>
+
+<!-- Header & Navigation -->
+<header>
+<div class="container">
+    <div class="logo">
+        <div class="logo-image">
+            <img src="../images/logo/ccs.png" alt="CCS Logo">
+        </div>
+        <span class="logo-text">
+            <span class="logo-text-full">College of Computer Studies</span>
+            <span class="logo-text-short">CCS</span>
+        </span>
+    </div>
+    <nav>
+        <div class="mobile-controls">
+          <div class="theme-switch-wrapper mobile-only">
+              <div class="theme-switch">
+                  <label class="theme-switch-label">
+                      <input type="checkbox" class="theme-switch-checkbox" id="themeSwitchMobile">
+                      <span class="theme-switch-slider">
+                          <span class="theme-switch-icon sun-icon">☀️</span>
+                          <span class="theme-switch-icon moon-icon">🌙</span>
+                      </span>
+                  </label>
+              </div>
+          </div>
+          <div class="menu-toggle" id="menuToggle">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+          </div>
+        </div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../index.html#programs">Programs</a></li>
+            <li><a href="../index.html#careers">Careers</a></li>
+            <li><a href="../index.html#testimonials">Testimonials</a></li>
+            <li><a href="../index.html#faculty">Faculty</a></li>
+            <li><a href="../index.html#contact">Contact</a></li>
+            <li class="desktop-only">
+              <div class="theme-switch-wrapper">
+                  <div class="theme-switch">
+                      <label class="theme-switch-label">
+                          <input type="checkbox" class="theme-switch-checkbox" id="themeSwitchDesktop">
+                      <span class="theme-switch-slider">
+                          <span class="theme-switch-icon sun-icon">☀️</span>
+                          <span class="theme-switch-icon moon-icon">🌙</span>
+                      </span>
+                      </label>
+                  </div>
+              </div>
+            </li>
+        </ul>
+    </nav>
+</div>
+</header>
+
+<main>
+<!-- News Hero Section -->
+<section class="news-hero">
+    <div class="news-hero-overlay"></div>
+    <div class="container">
+        <div class="breadcrumb">
+            <div class="breadcrumb-item"><a href="../index.html">Home</a></div>
+            <div class="breadcrumb-item active">News</div>
+        </div>
+        <div class="news-hero-content">
+            <h1>College News & Announcements</h1>
+            <p>Stay updated with the latest news, achievements, and developments from the College of Computer Studies</p>
+        </div>
+    </div>
+</section>
+
+<!-- Featured News -->
+<section class="featured-news">
+    <div class="container">
+        <div class="section-header">
+            <h2>Featured News</h2>
+            <p>Highlights from our college</p>
+        </div>
+        
+        <div class="featured-news-item">
+            <div class="featured-news-image">
+                <img src="../images/logo/ccs.png" alt="CCS Team Wins National Hackathon">
+            </div>
+            <div class="featured-news-content">
+                <div class="news-meta">
+                    <span class="news-date">March 15, 2025</span>
+                    <span class="news-category">Achievements</span>
+                </div>
+                <h3>CCS Team Wins National Hackathon Championship</h3>
+                <p>A team of five Computer Science students from the College of Computer Studies secured first place at the National Collegiate Hackathon 2025. The team developed an innovative solution addressing water resource management using AI and IoT technologies.</p>
+                <p>The winning project, "AquaAlert," uses machine learning algorithms to predict water quality issues and provide early warnings to communities. The team was awarded a ₱200,000 prize and will represent the Philippines in the upcoming Southeast Asian Developers Summit.</p>
+                <div class="news-actions">
+                    <a href="#" class="btn btn-primary">Read Full Story</a>
+                    <div class="news-share">
+                        <span>Share:</span>
+                        <a href="#" class="share-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="share-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="share-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                <rect width="4" height="12" x="2" y="9"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- News Listing -->
+<section class="news-listing">
+    <div class="container">
+        <div class="news-grid">
+            <div class="news-item">
+                <div class="news-item-image">
+                    <img src="../images/logo/ccs.png" alt="New Computer Lab">
+                    <div class="news-category-badge">Facilities</div>
+                </div>
+                <div class="news-item-content">
+                    <div class="news-meta">
+                        <span class="news-date">March 1, 2025</span>
+                    </div>
+                    <h3>State-of-the-Art Computer Laboratory Now Open</h3>
+                    <p>The College of Computer Studies has unveiled its new high-performance computing laboratory featuring the latest hardware and software for advanced computing research and education.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+            
+            <div class="news-item">
+                <div class="news-item-image">
+                    <img src="../images/logo/ccs.png" alt="Professor Recognition">
+                    <div class="news-category-badge">Faculty</div>
+                </div>
+                <div class="news-item-content">
+                    <div class="news-meta">
+                        <span class="news-date">February 20, 2025</span>
+                    </div>
+                    <h3>CCS Faculty Member Receives National Research Award</h3>
+                    <p>Dr. Marianne Diaz has been recognized with the National Research Excellence Award for her groundbreaking work in database systems and data security protocols.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+            
+            <div class="news-item">
+                <div class="news-item-image">
+                    <img src="../images/logo/ccs.png" alt="Industry Partnership">
+                    <div class="news-category-badge">Partnerships</div>
+                </div>
+                <div class="news-item-content">
+                    <div class="news-meta">
+                        <span class="news-date">February 12, 2025</span>
+                    </div>
+                    <h3>CCS Establishes Industry Partnership with TechCorp International</h3>
+                    <p>A new partnership between the College of Computer Studies and TechCorp International will provide internship opportunities, scholarships, and industry mentorship for students.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+            
+            <div class="news-item">
+                <div class="news-item-image">
+                    <img src="../images/logo/ccs.png" alt="Scholarship Program">
+                    <div class="news-category-badge">Scholarships</div>
+                </div>
+                <div class="news-item-content">
+                    <div class="news-meta">
+                        <span class="news-date">January 28, 2025</span>
+                    </div>
+                    <h3>New Scholarship Program Announced for CS and IT Students</h3>
+                    <p>The College of Computer Studies has launched a new scholarship program that will support deserving students pursuing degrees in Computer Science and Information Technology.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+            
+            <div class="news-item">
+                <div class="news-item-image">
+                    <img src="../images/logo/ccs.png" alt="Curriculum Updates">
+                    <div class="news-category-badge">Academics</div>
+                </div>
+                <div class="news-item-content">
+                    <div class="news-meta">
+                        <span class="news-date">January 15, 2025</span>
+                    </div>
+                    <h3>Curriculum Updates to Include AI and Machine Learning Specialization</h3>
+                    <p>The College of Computer Studies is enhancing its curriculum with a new specialization track in Artificial Intelligence and Machine Learning starting academic year 2025-2026.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+            
+            <div class="news-item">
+                <div class="news-item-image">
+                    <img src="../images/logo/ccs.png" alt="Student Achievement">
+                    <div class="news-category-badge">Student Success</div>
+                </div>
+                <div class="news-item-content">
+                    <div class="news-meta">
+                        <span class="news-date">December 18, 2024</span>
+                    </div>
+                    <h3>CCS Student Develops App Selected for National Innovation Showcase</h3>
+                    <p>Senior IT student Juan Reyes's mobile application for community disaster response has been selected to be featured at the National Innovation Showcase in Manila.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+            
+            <div class="news-item">
+                <div class="news-item-image">
+                    <img src="../images/logo/ccs.png" alt="Web Design Contest">
+                    <div class="news-category-badge">Competitions</div>
+                </div>
+                <div class="news-item-content">
+                    <div class="news-meta">
+                        <span class="news-date">December 10, 2024</span>
+                    </div>
+                    <h3>Annual Web Design Contest Accepting Submissions</h3>
+                    <p>The College of Computer Studies has announced the opening of submissions for its annual Web Design Contest with the theme "Digital Solutions for Community Development."</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+            
+            <div class="news-item">
+                <div class="news-item-image">
+                    <img src="../images/logo/ccs.png" alt="Digital Laboratory">
+                    <div class="news-category-badge">Facilities</div>
+                </div>
+                <div class="news-item-content">
+                    <div class="news-meta">
+                        <span class="news-date">November 30, 2024</span>
+                    </div>
+                    <h3>New Digital Innovation Laboratory to Open Next Semester</h3>
+                    <p>Construction has begun on a new Digital Innovation Laboratory that will provide students with access to virtual reality equipment, 3D printing facilities, and IoT development kits.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="news-pagination">
+            <a href="#" class="pagination-link active">1</a>
+            <a href="#" class="pagination-link">2</a>
+            <a href="#" class="pagination-link">3</a>
+            <span class="pagination-ellipsis">...</span>
+            <a href="#" class="pagination-link">5</a>
+            <a href="#" class="pagination-next">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="m9 18 6-6-6-6"></path>
+                </svg>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Newsletter Signup -->
+<section class="newsletter-section">
+    <div class="container">
+        <div class="newsletter-container">
+            <div class="newsletter-content">
+                <h3>Subscribe to Our Newsletter</h3>
+                <p>Stay updated with the latest news, events, and announcements from the College of Computer Studies.</p>
+            </div>
+            <div class="newsletter-form">
+                <input type="email" placeholder="Your email address" class="newsletter-input">
+                <button class="btn btn-primary newsletter-button">Subscribe</button>
+            </div>
+        </div>
+    </div>
+</section>
+</main>
+
+<!-- Footer Section -->
+<footer>
+<div class="container">
+    <div class="footer-content">
+        <div class="footer-top">
+            <div class="footer-branding">
+                <div class="footer-logos">
+                    <div class="footer-logo-img">
+                        <img src="../images/logo/sjc.png" alt="Saint Joseph College Logo">
+                    </div>
+                    <div class="footer-logo-img">
+                        <img src="../images/logo/ccs.png" alt="CCS Logo">
+                    </div>
+                </div>
+                <div class="footer-title">College of Computer Studies</div>
+            </div>
+        </div>
+        
+        <div class="footer-main">
+            <div class="footer-left">
+                <div class="footer-about">
+                    <h3>About Us</h3>
+                    <p>The College of Computer Studies at Saint Joseph College is dedicated to providing quality education in computer science and information technology. We empower students with cutting-edge knowledge and skills needed to excel in the rapidly evolving world of technology and computing.</p>
+                    <p>Tunga-tunga, Maasin City, Southern Leyte, Philippines, 6600</p>
+                </div>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../index.html#programs">Programs</a></li>
+                        <li><a href="../index.html#news-events">News & Events</a></li>
+                        <li><a href="../index.html#careers">Careers</a></li>
+                        <li><a href="../index.html#testimonials">Testimonials</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="https://online.sjc.edu.ph/enrollment/index.php" target="_blank">Student Portal</a></li>
+                        <li><a href="#">Faculty Directory</a></li>
+                        <li><a href="#">Research Publications</a></li>
+                        <li><a href="https://online.sjc.edu.ph/library/?content=opac" target="_blank">Library</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Connect</h3>
+                    <ul>
+                        <li><a href="https://www.facebook.com/profile.php?id=100083430218425" target="_blank">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="https://www.linkedin.com/school/saint-joseph-college-maasin-city/posts/?feedView=all" target="_blank">LinkedIn</a></li>
+                        <li><a href="https://www.instagram.com/explore/locations/562812642/saint-joseph-college-maasin-city/" target="_blank">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; <span id="currentYear"></span> College of Computer Studies. All Rights Reserved.</p>
+        <div class="footer-bottom-links">
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="terms-of-service.html">Terms of Service</a>
+            <a href="sitemap.html">Sitemap</a>
+        </div>
+    </div>
+</div>
+</footer>
+
+<!-- Chat Assistant -->
+<div id="chatAssistant" class="chat-assistant">
+    <div class="chat-toggle" id="chatToggle">
+        <div class="chat-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+            </svg>
+        </div>
+        <span class="chat-label">AI Assistant</span>
+    </div>
+
+    <div class="chat-window" id="chatWindow">
+        <div class="chat-header">
+            <div class="chat-header-info">
+                <div class="chat-avatar">
+                    <img src="../images/logo/ccs.png" alt="CCS Assistant">
+                </div>
+                <div class="chat-title">
+                    <h3>CCS Tech Assistant</h3>
+                    <span class="chat-status">Online</span>
+                </div>
+            </div>
+            <button class="chat-close" id="chatClose">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+        
+        <div class="chat-messages" id="chatMessages"></div>
+        
+        <div class="chat-quick-questions" id="chatQuickQuestions">
+            <button class="quick-question" data-question="What's the latest news?">Latest news?</button>
+            <button class="quick-question" data-question="How can I subscribe to the newsletter?">Newsletter info</button>
+            <button class="quick-question" data-question="Are there any student achievements?">Student achievements</button>
+            <button class="quick-question" data-question="Tell me about upcoming events">Upcoming events</button>
+        </div>
+        
+        <div class="chat-input-container">
+            <input type="text" id="chatInput" class="chat-input" placeholder="Type your question here...">
+            <button id="chatSend" class="chat-send">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- JavaScript Files -->
+<script src="../js/main.js"></script>
+<script src="../js/chat-assistant.js"></script>
+<script>
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
+

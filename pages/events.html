@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Events | College of Computer Studies</title>
+
+<!-- Stylesheets -->
+<link rel="stylesheet" href="../css/main.css">
+<link rel="stylesheet" href="../css/header.css">
+<link rel="stylesheet" href="../css/footer.css">
+<link rel="stylesheet" href="../css/theme-switcher.css">
+<link rel="stylesheet" href="../css/chat-assistant.css">
+<link rel="stylesheet" href="../css/page-content.css">
+<link rel="stylesheet" href="../css/events.css">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- Loading Screen -->
+<div class="loading-screen" id="loadingScreen">
+  <div class="loader">
+      <div class="loader-circle"></div>
+      <div class="loader-text">Loading...</div>
+  </div>
+</div>
+
+<!-- Header & Navigation -->
+<header>
+<div class="container">
+    <div class="logo">
+        <div class="logo-image">
+            <img src="../images/logo/ccs.png" alt="CCS Logo">
+        </div>
+        <span class="logo-text">
+            <span class="logo-text-full">College of Computer Studies</span>
+            <span class="logo-text-short">CCS</span>
+        </span>
+    </div>
+    <nav>
+        <div class="mobile-controls">
+          <div class="theme-switch-wrapper mobile-only">
+              <div class="theme-switch">
+                  <label class="theme-switch-label">
+                      <input type="checkbox" class="theme-switch-checkbox" id="themeSwitchMobile">
+                      <span class="theme-switch-slider">
+                          <span class="theme-switch-icon sun-icon">☀️</span>
+                          <span class="theme-switch-icon moon-icon">🌙</span>
+                      </span>
+                  </label>
+              </div>
+          </div>
+          <div class="menu-toggle" id="menuToggle">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+          </div>
+        </div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../index.html#programs">Programs</a></li>
+            <li><a href="../index.html#careers">Careers</a></li>
+            <li><a href="../index.html#testimonials">Testimonials</a></li>
+            <li><a href="../index.html#faculty">Faculty</a></li>
+            <li><a href="../index.html#contact">Contact</a></li>
+            <li class="desktop-only">
+              <div class="theme-switch-wrapper">
+                  <div class="theme-switch">
+                      <label class="theme-switch-label">
+                          <input type="checkbox" class="theme-switch-checkbox" id="themeSwitchDesktop">
+                          <span class="theme-switch-slider">
+                              <span class="theme-switch-icon sun-icon">☀️</span>
+                              <span class="theme-switch-icon moon-icon">🌙</span>
+                          </span>
+                      </label>
+                  </div>
+              </div>
+            </li>
+        </ul>
+    </nav>
+</div>
+</header>
+
+<main>
+<!-- Events Hero Section -->
+<section class="events-hero">
+    <div class="events-hero-overlay"></div>
+    <div class="container">
+        <div class="breadcrumb">
+            <div class="breadcrumb-item"><a href="../index.html">Home</a></div>
+            <div class="breadcrumb-item active">Events</div>
+        </div>
+        <div class="events-hero-content">
+            <h1>College Events</h1>
+            <p>Discover upcoming events, workshops, conferences, and past activities at the College of Computer Studies</p>
+        </div>
+    </div>
+</section>
+
+<!-- Featured Event -->
+<section class="featured-event">
+    <div class="container">
+        <div class="featured-event-card">
+            <div class="featured-event-image">
+                <img src="../images/logo/ccs.png" alt="CCS Tech Summit 2025">
+                <div class="featured-event-date">
+                    <div class="date-month">APR</div>
+                    <div class="date-day">15</div>
+                </div>
+            </div>
+            <div class="featured-event-content">
+                <div class="event-badge">Featured Event</div>
+                <h2>CCS Tech Summit 2025: The Future of Computing</h2>
+                <div class="event-details">
+                    <div class="event-detail">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect width="18" height="18" x="3" y="4" rx="2" ry="2"></rect>
+                            <line x1="16" x2="16" y1="2" y2="6"></line>
+                            <line x1="8" x2="8" y1="2" y2="6"></line>
+                        </svg>
+                        <span>April 15-16, 2025 • 8:00 AM - 5:00 PM</span>
+                    </div>
+                    <div class="event-detail">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                              stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                        <span>SJC Auditorium, Main Campus, Maasin City</span>
+                    </div>
+                    <div class="event-detail">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                        <span>Open to Students, Faculty, IT Professionals, and Industry Partners</span>
+                    </div>
+                </div>
+                <p>Join us for the annual CCS Tech Summit featuring keynote speeches, workshops, and panel discussions on emerging technologies in artificial intelligence, cybersecurity, and cloud computing. Network with industry leaders and showcase your innovative projects in the tech exhibition.</p>
+                <div class="event-actions">
+                    <a href="#" class="btn btn-primary">Register Now</a>
+                    <a href="#" class="btn btn-secondary">Learn More</a>
+                    <div class="event-share">
+                        <a href="#" class="share-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="share-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="share-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                <rect width="4" height="12" x="2" y="9"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Events Tabs -->
+<section class="events-tabs-section">
+    <div class="container">
+        <div class="events-tabs">
+            <button class="events-tab active" data-tab="upcoming">Upcoming Events</button>
+            <button class="events-tab" data-tab="past">Past Events</button>
+        </div>
+        
+        <!-- Upcoming Events -->
+        <div class="events-tab-content active" id="upcoming-events">
+            <div class="events-grid">
+                <div class="event-card">
+                    <div class="event-card-image">
+                        <img src="../images/logo/ccs.png" alt="UI/UX Workshop">
+                        <div class="event-date">
+                            <div class="date-day">25</div>
+                            <div class="date-month">Mar</div>
+                        </div>
+                    </div>
+                    <div class="event-card-content">
+                        <h3>UI/UX Design Workshop for Beginners</h3>
+                        <div class="event-card-details">
+                            <div class="event-card-detail">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect width="18" height="18" x="3" y="4" rx="2" ry="2"></rect>
+                                    <line x1="16" x2="16" y1="2" y2="6"></line>
+                                    <line x1="8" x2="8" y1="2" y2="6"></line>
+                                </svg>
+                                <span>March 25, 2025</span>
+                            </div>
+                            <div class="event-card-detail">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                </svg>
+                                <span>9:00 AM - 4:00 PM</span>
+                            </div>
+                            <div class="event-card-detail">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                                <span>CCS Design Lab</span>
+                            </div>
+                        </div>
+                        <p>Learn the fundamentals of UI/UX design in this hands-on workshop led by industry professionals from DesignHub.</p>
+                        <a href="#" class="btn btn-secondary">Register</a>
+                    </div>
+                </div>
+                
+                <div class="event-card">
+                    <div class="event-card-image">
+                        <img src="../images/logo/ccs.png" alt="Hackathon">
+                        <div class="event-date">
+                            <div class="date-day">10</div>
+                            <div class="date-month">Apr</div>
+                        </div>
+                    </div>
+                    <div class="event-card-content">
+                        <h3>CodeFest Hackathon: Innovate for Good</h3>
+                        <div class="event-card-details">
+                            <div class="event-card-detail">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect width="18" height="18" x="3" y="4" rx="2" ry="2"></rect>
+                                    <line x1="16" x2="16" y1="2" y2="6"></line>
+                                    <line x1="8" x2="8" y1="2" y2="6"></line>
+                                </svg>
+                                <span>April 10-11, 2025</span>
+                            </div>
+                            <div class="event-card-detail">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                </svg>
+                                <span>48 Hours</span>
+                            </div>
+                            <div class="event-card-detail">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                                <span>CCS Innovation Center</span>
+                            </div>
+                        </div>
+                        <p>Join our 48-hour hackathon to develop tech solutions addressing local community challenges. Cash prizes and mentorship opportunities available.</p>
+                        <a href="#" class="btn btn-secondary">Register</a>
+                    </div>
+                </div>
+                
+                <div class="event-card">
+                    <div class="event-card-image">
+                        <img src="../images/logo/ccs.png" alt="AI Seminar">
+                        <div class="event-date">
+                            <div class="date-day">05</div>
+                            <div class="date-month">May</div>
+                        </div>
+                    </div>
+                    <div class="event-card-content">
+                        <h3>AI and Machine Learning Seminar Series</h3>
+                        <div class="event-card-details">
+                            <div class="event-card-detail">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect width="18" height="18" x="3" y="4" rx="2" ry="2"></rect>
+                                    <line x1="16" x2="16" y1="2" y2="6"></line>
+                                    <line x1="8" x2="8" y1="2" y2="6"></line>
+                                </svg>
+                                <span>May 5-7, 2025</span>
+                            </div>
+                            <div class="event-card-detail">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                </svg>
+                                <span>2:00 PM - 5:00 PM</span>
+                            </div>
+                            <div class="event-card-detail">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                                <span>SJC Conference Hall</span>
+                            </div>
+                        </div>
+                        <p>A three-day seminar featuring experts discussing current trends and applications in artificial intelligence and machine learning.</p>
+                        <a href="#" class="btn btn-secondary">Register</a>
+                    </div>
+                </div>
+                
+                <div class="event-card">
+                    <div class="event-card-image">
+                        <img src="../images/logo/ccs.png" alt="Job Fair">
+                        <div class="event-date">
+                            <div class="date-day">20</div>
+                            <div class="date-month">May</div>
+                        </div>
+                    </div>
+                    <div class="event-card-content">
+                        <h3>IT Career Fair and Networking Event</h3>
+                        <div class="event-card-details">
+                            <div class="event-card-detail">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect width="18" height="18" x="3" y="4" rx="2" ry="2"></rect>
+                                    <line x1="16" x2="16" y1="2" y2="6"></line>
+                                    <line x1="8" x2="8" y1="2" y2="6"></line>
+                                </svg>
+                                <span>May 20, 2025</span>
+                            </div>
+                            <div class="event-card-detail">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                </svg>
+                                <span>10:00 AM - 4:00 PM</span>
+                            </div>
+                            <div class="event-card-detail">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                                <span>SJC Gymnasium</span>
+                            </div>
+                        </div>
+                        <p>Connect with leading tech companies and explore internship and job opportunities in the IT sector. Bring your resume and portfolio!</p>
+                        <a href="#" class="btn btn-secondary">Register</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="view-all-container">
+                <a href="#" class="btn btn-primary">View All Upcoming Events</a>
+            </div>
+        </div>
+        
+        <!-- Past Events -->
+        <div class="events-tab-content" id="past-events">
+            <div class="events-grid">
+                <div class="event-card past-event">
+                    <div class="event-card-image">
+                        <img src="../images/logo/ccs.png" alt="Game Dev Workshop">
+                        <div class="event-date">
+                            <div class="date-day">10</div>
+                            <div class="date-month">Feb</div>
+                        </div>
+                    </div>
+                    <div class="event-card-content">
+                        <h3>Game Development Workshop</h3>
+                        <div class="event-card-details">
+                            <div class="event-card-detail">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect width="18" height="18" x="3" y="4" rx="2" ry="2"></rect>
+                                    <line x1="16" x2="16" y1="2" y2="6"></line>
+                                    <line x1="8" x2="8" y1="2" y2="6"></line>
+                                </svg>
+                                <span>February 10, 2025</span>
+                            </div>
+                            <div class="event-card-detail">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                                <span>CCS Computer Lab 3</span>
+                            </div>
+                        </div>
+                        <p>A practical workshop on game development fundamentals using Unity, covering basics of 2D game creation.</p>
+                        <div class="past-event-actions">
+                            <span class="past-event-badge">Completed</span>
+                            <a href="#" class="view-photos-link">View Photos</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="event-card past-event">
+                    <div class="event-card-image">
+                        <img src="../images/logo/ccs.png" alt="Cybersecurity Seminar">
+                        <div class="event-date">
+                            <div class="date-day">25</div>
+                            <div class="date-month">Jan</div>
+                        </div>
+                    </div>
+                    <div class="event-card-content">
+                        <h3>Cybersecurity Awareness Seminar</h3>
+                        <div class="event-card-details">
+                            <div class="event-card-detail">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect width="18" height="18" x="3" y="4" rx="2" ry="2"></rect>
+                                    <line x1="16" x2="16" y1="2" y2="6"></line>
+                                    <line x1="8" x2="8" y1="2" y2="6"></line>
+                                </svg>
+                                <span>January 25, 2025</span>
+                            </div>
+                            <div class="event-card-detail">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                                <span>SJC Auditorium</span>
+                            </div>
+                        </div>
+                        <p>Educational seminar on cybersecurity best practices, featuring speakers from the National Cybersecurity Agency.</p>
+                        <div class="past-event-actions">
+                            <span class="past-event-badge">Completed</span>
+                            <a href="#" class="view-photos-link">View Photos</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="event-card past-event">
+                    <div class="event-card-image">
+                        <img src="../images/logo/ccs.png" alt="Algorithm Competition">
+                        <div class="event-date">
+                            <div class="date-day">15</div>
+                            <div class="date-month">Jan</div>
+                        </div>
+                    </div>
+                    <div class="event-card-content">
+                        <h3>Algorithm Programming Competition</h3>
+                        <div class="event-card-details">
+                            <div class="event-card-detail">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect width="18" height="18" x="3" y="4" rx="2" ry="2"></rect>
+                                    <line x1="16" x2="16" y1="2" y2="6"></line>
+                                    <line x1="8" x2="8" y1="2" y2="6"></line>
+                                </svg>
+                                <span>January 15, 2025</span>
+                            </div>
+                            <div class="event-card-detail">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                                <span>CCS Computer Labs</span>
+                            </div>
+                        </div>
+                        <p>Competitive programming event testing students' algorithm skills and problem-solving abilities.</p>
+                        <div class="past-event-actions">
+                            <span class="past-event-badge">Completed</span>
+                            <a href="#" class="view-photos-link">View Photos</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="event-card past-event">
+                    <div class="event-card-image">
+                        <img src="../images/logo/ccs.png" alt="IT Symposium">
+                        <div class="event-date">
+                            <div class="date-day">05</div>
+                            <div class="date-month">Dec</div>
+                        </div>
+                    </div>
+                    <div class="event-card-content">
+                        <h3>IT Industry Symposium 2024</h3>
+                        <div class="event-card-details">
+                            <div class="event-card-detail">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect width="18" height="18" x="3" y="4" rx="2" ry="2"></rect>
+                                    <line x1="16" x2="16" y1="2" y2="6"></line>
+                                    <line x1="8" x2="8" y1="2" y2="6"></line>
+                                </svg>
+                                <span>December 5, 2024</span>
+                            </div>
+                            <div class="event-card-detail">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                                <span>SJC Conference Hall</span>
+                            </div>
+                        </div>
+                        <p>Annual symposium bringing together IT professionals from various industries to discuss current trends and future directions.</p>
+                        <div class="past-event-actions">
+                            <span class="past-event-badge">Completed</span>
+                            <a href="#" class="view-photos-link">View Photos</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="view-all-container">
+                <a href="#" class="btn btn-primary">View All Past Events</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Event Modal -->
+<div class="event-modal" id="eventModal">
+    <div class="event-modal-content">
+        <div class="event-modal-header">
+            <h3 class="event-modal-title" id="eventModalTitle">Events on March 25, 2025</h3>
+            <button class="event-modal-close" id="eventModalClose">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+        <div class="event-modal-body" id="eventModalBody">
+            <ul class="event-modal-list" id="eventModalList">
+                <!-- Event details will be populated by JavaScript -->
+            </ul>
+        </div>
+        <div class="event-modal-footer">
+            <button class="btn btn-secondary" id="eventModalClose2">Close</button>
+        </div>
+    </div>
+</div>
+
+<!-- Event Submission -->
+<section class="event-submission-section">
+    <div class="container">
+        <div class="event-submission-container">
+            <div class="event-submission-content">
+                <h3>Suggest an Event</h3>
+                <p>Are you a student, faculty member, or department with an event idea? We'd love to hear from you!</p>
+                <p>Submit your event proposal for review and inclusion in our college calendar.</p>
+            </div>
+            <a href="#" class="btn btn-primary event-submission-button">Submit Event Proposal</a>
+        </div>
+    </div>
+</section>
+</main>
+
+<!-- Footer Section -->
+<footer>
+<div class="container">
+    <div class="footer-content">
+        <div class="footer-top">
+            <div class="footer-branding">
+                <div class="footer-logos">
+                    <div class="footer-logo-img">
+                        <img src="../images/logo/sjc.png" alt="Saint Joseph College Logo">
+                    </div>
+                    <div class="footer-logo-img">
+                        <img src="../images/logo/ccs.png" alt="CCS Logo">
+                    </div>
+                </div>
+                <div class="footer-title">College of Computer Studies</div>
+            </div>
+        </div>
+        
+        <div class="footer-main">
+            <div class="footer-left">
+                <div class="footer-about">
+                    <h3>About Us</h3>
+                    <p>The College of Computer Studies at Saint Joseph College is dedicated to providing quality education in computer science and information technology. We empower students with cutting-edge knowledge and skills needed to excel in the rapidly evolving world of technology and computing.</p>
+                    <p>Tunga-tunga, Maasin City, Southern Leyte, Philippines, 6600</p>
+                </div>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../index.html#programs">Programs</a></li>
+                        <li><a href="../index.html#news-events">News & Events</a></li>
+                        <li><a href="../index.html#careers">Careers</a></li>
+                        <li><a href="../index.html#testimonials">Testimonials</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="https://online.sjc.edu.ph/enrollment/index.php" target="_blank">Student Portal</a></li>
+                        <li><a href="#">Faculty Directory</a></li>
+                        <li><a href="#">Research Publications</a></li>
+                        <li><a href="https://online.sjc.edu.ph/library/?content=opac" target="_blank">Library</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Connect</h3>
+                    <ul>
+                        <li><a href="https://www.facebook.com/profile.php?id=100083430218425" target="_blank">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="https://www.linkedin.com/school/saint-joseph-college-maasin-city/posts/?feedView=all" target="_blank">LinkedIn</a></li>
+                        <li><a href="https://www.instagram.com/explore/locations/562812642/saint-joseph-college-maasin-city/" target="_blank">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; <span id="currentYear"></span> College of Computer Studies. All Rights Reserved.</p>
+        <div class="footer-bottom-links">
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="terms-of-service.html">Terms of Service</a>
+            <a href="sitemap.html">Sitemap</a>
+        </div>
+    </div>
+</div>
+</footer>
+
+<!-- Chat Assistant -->
+<div id="chatAssistant" class="chat-assistant">
+    <div class="chat-toggle" id="chatToggle">
+        <div class="chat-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+            </svg>
+        </div>
+        <span class="chat-label">AI Assistant</span>
+    </div>
+
+    <div class="chat-window" id="chatWindow">
+        <div class="chat-header">
+            <div class="chat-header-info">
+                <div class="chat-avatar">
+                    <img src="../images/logo/ccs.png" alt="CCS Assistant">
+                </div>
+                <div class="chat-title">
+                    <h3>CCS Tech Assistant</h3>
+                    <span class="chat-status">Online</span>
+                </div>
+            </div>
+            <button class="chat-close" id="chatClose">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+        
+        <div class="chat-messages" id="chatMessages"></div>
+        
+        <div class="chat-quick-questions" id="chatQuickQuestions">
+            <button class="quick-question" data-question="What's the next event?">Next event?</button>
+            <button class="quick-question" data-question="How can I register for an event?">How to register?</button>
+            <button class="quick-question" data-question="Can I submit my own event?">Submit event?</button>
+            <button class="quick-question" data-question="Tell me about the tech summit">Tech Summit?</button>
+        </div>
+        
+        <div class="chat-input-container">
+            <input type="text" id="chatInput" class="chat-input" placeholder="Type your question here...">
+            <button id="chatSend" class="chat-send">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- JavaScript Files -->
+<script src="../js/main.js"></script>
+<script src="../js/chat-assistant.js"></script>
+<script src="../js/events.js"></script>
+<script>
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
+

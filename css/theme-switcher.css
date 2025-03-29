@@ -1,0 +1,94 @@
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.theme-switch {
+  position: relative;
+  display: inline-block;
+  height: 26px;
+  width: 50px;
+}
+
+.theme-switch-label {
+  display: inline-block;
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+
+.theme-switch-checkbox {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+  position: absolute;
+}
+
+.theme-switch-slider {
+  background-color: #333;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: .2s;
+  border-radius: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5px;
+}
+
+.light-theme .theme-switch-slider {
+  background-color: #e4e6eb;
+}
+
+.theme-switch-slider:before {
+  background-color: #fff;
+  bottom: 4px;
+  content: "";
+  height: 18px;
+  left: 4px;
+  position: absolute;
+  transition: .2s;
+  width: 18px;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.theme-switch-checkbox:checked + .theme-switch-slider {
+  background-color: var(--primary-color);
+}
+
+.theme-switch-checkbox:checked + .theme-switch-slider:before {
+  transform: translateX(24px);
+}
+
+.theme-switch-icon {
+  color: var(--light-text);
+  font-size: 14px;
+  position: absolute;
+  z-index: 1;
+  transition: opacity 0.2s ease;
+}
+
+.theme-switch-icon.sun-icon {
+  left: 6px;
+  opacity: 0;
+}
+
+.theme-switch-icon.moon-icon {
+  right: 6px;
+  opacity: 1;
+}
+
+.theme-switch-checkbox:checked + .theme-switch-slider .sun-icon {
+  opacity: 1;
+}
+
+.theme-switch-checkbox:checked + .theme-switch-slider .moon-icon {
+  opacity: 0;
+}
+

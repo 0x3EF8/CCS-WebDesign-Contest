@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Webinars | College of Computer Studies</title>
+
+<!-- Stylesheets -->
+<link rel="stylesheet" href="../css/main.css">
+<link rel="stylesheet" href="../css/header.css">
+<link rel="stylesheet" href="../css/footer.css">
+<link rel="stylesheet" href="../css/theme-switcher.css">
+<link rel="stylesheet" href="../css/chat-assistant.css">
+<link rel="stylesheet" href="../css/page-content.css">
+<link rel="stylesheet" href="../css/webinars.css">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- Loading Screen -->
+<div class="loading-screen" id="loadingScreen">
+<div class="loader">
+    <div class="loader-circle"></div>
+    <div class="loader-text">Loading...</div>
+</div>
+</div>
+
+<!-- Header & Navigation -->
+<header>
+<div class="container">
+  <div class="logo">
+      <div class="logo-image">
+          <img src="../images/logo/ccs.png" alt="CCS Logo">
+      </div>
+      <span class="logo-text">
+          <span class="logo-text-full">College of Computer Studies</span>
+          <span class="logo-text-short">CCS</span>
+      </span>
+  </div>
+  <nav>
+      <div class="mobile-controls">
+        <div class="theme-switch-wrapper mobile-only">
+            <div class="theme-switch">
+                <label class="theme-switch-label">
+                    <input type="checkbox" class="theme-switch-checkbox" id="themeSwitchMobile">
+                    <span class="theme-switch-slider">
+                        <span class="theme-switch-icon sun-icon">☀️</span>
+                        <span class="theme-switch-icon moon-icon">🌙</span>
+                    </span>
+                </label>
+            </div>
+        </div>
+        <div class="menu-toggle" id="menuToggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+      </div>
+      <ul class="nav-links" id="navLinks">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../index.html#programs">Programs</a></li>
+          <li><a href="../index.html#careers">Careers</a></li>
+          <li><a href="../index.html#testimonials">Testimonials</a></li>
+          <li><a href="../index.html#faculty">Faculty</a></li>
+          <li><a href="../index.html#contact">Contact</a></li>
+          <li class="desktop-only">
+            <div class="theme-switch-wrapper">
+                <div class="theme-switch">
+                    <label class="theme-switch-label">
+                        <input type="checkbox" class="theme-switch-checkbox" id="themeSwitchDesktop">
+                        <span class="theme-switch-slider">
+                            <span class="theme-switch-icon sun-icon">☀️</span>
+                            <span class="theme-switch-icon moon-icon">🌙</span>
+                        </span>
+                    </label>
+                </div>
+            </div>
+          </li>
+      </ul>
+  </nav>
+</div>
+</header>
+
+<main>
+<!-- Webinars Hero Section -->
+<section class="webinars-hero">
+  <div class="webinars-hero-overlay"></div>
+  <div class="container">
+      <div class="breadcrumb">
+          <div class="breadcrumb-item"><a href="../index.html">Home</a></div>
+          <div class="breadcrumb-item active">Webinars</div>
+      </div>
+      <div class="webinars-hero-content">
+          <h1>CCS Professional Webinar Series</h1>
+          <p>Access expert-led virtual sessions on cutting-edge technology topics to enhance your professional skills and knowledge</p>
+      </div>
+  </div>
+</section>
+
+<!-- Featured Webinar -->
+<section class="featured-webinar">
+  <div class="container">
+      <div class="section-header">
+          <h2>Featured Webinar</h2>
+          <p>Don't miss our upcoming flagship virtual event</p>
+      </div>
+      <div class="featured-webinar-card">
+          <div class="featured-webinar-image">
+              <img src="../images/logo/ccs.png" alt="AI and Machine Learning Webinar">
+              <div class="featured-webinar-date">
+                  <div class="date-month">APR</div>
+                  <div class="date-day">15</div>
+              </div>
+          </div>
+          <div class="featured-webinar-content">
+              <div class="webinar-badge">Featured Webinar</div>
+              <h2>AI and Machine Learning: The Future of Technology</h2>
+              <div class="webinar-details">
+                  <div class="webinar-detail">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <rect width="18" height="18" x="3" y="4" rx="2" ry="2"></rect>
+                          <line x1="16" x2="16" y1="2" y2="6"></line>
+                          <line x1="8" x2="8" y1="2" y2="6"></line>
+                      </svg>
+                      <span>April 15, 2025 • 10:00 AM - 12:00 PM</span>
+                  </div>
+                  <div class="webinar-detail">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                          <circle cx="12" cy="7" r="4"></circle>
+                      </svg>
+                      <span>Presenter: Dr. Ana Lim, AI Research Specialist</span>
+                  </div>
+                  <div class="webinar-detail">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <rect width="20" height="14" x="2" y="3" rx="2" ry="2"></rect>
+                          <line x1="8" x2="16" y1="21" y2="21"></line>
+                          <line x1="12" x2="12" y1="17" y2="21"></line>
+                      </svg>
+                      <span>Virtual (Zoom)</span>
+                  </div>
+              </div>
+              <p>Explore the cutting-edge developments in AI and machine learning and how they're transforming various industries. This webinar will cover neural networks, deep learning, computer vision, and natural language processing with practical demonstrations and real-world use cases.</p>
+              <div class="webinar-actions">
+                  <a href="https://zoom.us" target="_blank" class="btn btn-primary">Join Webinar</a>
+                  <a href="#" class="btn btn-secondary">Add to Calendar</a>
+                  <div class="webinar-share">
+                      <a href="#" class="share-icon">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                          </svg>
+                      </a>
+                      <a href="#" class="share-icon">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                              <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
+                          </svg>
+                      </a>
+                      <a href="#" class="share-icon">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                              <rect width="4" height="12" x="2" y="9"></rect>
+                              <circle cx="4" cy="4" r="2"></circle>
+                          </svg>
+                      </a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<!-- Webinars Tabs -->
+<section class="webinars-tabs-section">
+  <div class="container">
+      <div class="section-header">
+          <h2>Webinar Series</h2>
+          <p>Explore our comprehensive collection of technical webinars</p>
+      </div>
+      
+      <div class="webinars-tabs">
+          <button class="webinars-tab active" data-tab="upcoming">Upcoming Webinars</button>
+          <button class="webinars-tab" data-tab="past">Past Webinars</button>
+      </div>
+      
+      <!-- Upcoming Webinars -->
+      <div class="webinars-tab-content active" id="upcoming-webinars">
+          <div class="webinars-grid">
+              <div class="webinar-card">
+                  <div class="webinar-card-image">
+                      <img src="../images/logo/ccs.png" alt="Web Development Webinar">
+                      <div class="webinar-date">
+                          <div class="date-day">25</div>
+                          <div class="date-month">Mar</div>
+                      </div>
+                  </div>
+                  <div class="webinar-card-content">
+                      <h3>Introduction to Web Development with React</h3>
+                      <div class="webinar-card-details">
+                          <div class="webinar-card-detail">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                  <rect width="18" height="18" x="3" y="4" rx="2" ry="2"></rect>
+                                  <line x1="16" x2="16" y1="2" y2="6"></line>
+                                  <line x1="8" x2="8" y1="2" y2="6"></line>
+                              </svg>
+                              <span>March 25, 2025</span>
+                          </div>
+                          <div class="webinar-card-detail">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                  <circle cx="12" cy="12" r="10"></circle>
+                                  <polyline points="12 6 12 12 16 14"></polyline>
+                              </svg>
+                              <span>2:00 PM - 4:00 PM</span>
+                          </div>
+                          <div class="webinar-card-detail">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                  <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                                  <circle cx="12" cy="7" r="4"></circle>
+                              </svg>
+                              <span>Dr. Maria Santos</span>
+                          </div>
+                      </div>
+                      <p>Learn the fundamentals of modern web development using React. This webinar covers component-based architecture, state management, and building interactive UIs.</p>
+                      <a href="https://zoom.us" target="_blank" class="btn btn-secondary">Join Webinar</a>
+                  </div>
+              </div>
+              
+              <div class="webinar-card">
+                  <div class="webinar-card-image">
+                      <img src="../images/logo/ccs.png" alt="Cybersecurity Webinar">
+                      <div class="webinar-date">
+                          <div class="date-day">10</div>
+                          <div class="date-month">Apr</div>
+                      </div>
+                  </div>
+                  <div class="webinar-card-content">
+                      <h3>Cybersecurity Best Practices for Developers</h3>
+                      <div class="webinar-card-details">
+                          <div class="webinar-card-detail">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                  <rect width="18" height="18" x="3" y="4" rx="2" ry="2"></rect>
+                                  <line x1="16" x2="16" y1="2" y2="6"></line>
+                                  <line x1="8" x2="8" y1="2" y2="6"></line>
+                              </svg>
+                              <span>April 10, 2025</span>
+                          </div>
+                          <div class="webinar-card-detail">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                  <circle cx="12" cy="12" r="10"></circle>
+                                  <polyline points="12 6 12 12 16 14"></polyline>
+                              </svg>
+                              <span>1:00 PM - 3:00 PM</span>
+                          </div>
+                          <div class="webinar-card-detail">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                  <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                                  <circle cx="12" cy="7" r="4"></circle>
+                              </svg>
+                              <span>John Reyes</span>
+                          </div>
+                      </div>
+                      <p>Discover essential security practices every developer should know. Topics include secure coding, vulnerability assessment, and protecting sensitive data.</p>
+                      <a href="https://zoom.us" target="_blank" class="btn btn-secondary">Join Webinar</a>
+                  </div>
+              </div>
+              
+              <div class="webinar-card">
+                  <div class="webinar-card-image">
+                      <img src="../images/logo/ccs.png" alt="Cloud Computing Webinar">
+                      <div class="webinar-date">
+                          <div class="date-day">05</div>
+                          <div class="date-month">May</div>
+                      </div>
+                  </div>
+                  <div class="webinar-card-content">
+                      <h3>Cloud Computing Fundamentals</h3>
+                      <div class="webinar-card-details">
+                          <div class="webinar-card-detail">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                  <rect width="18" height="18" x="3" y="4" rx="2" ry="2"></rect>
+                                  <line x1="16" x2="16" y1="2" y2="6"></line>
+                                  <line x1="8" x2="8" y1="2" y2="6"></line>
+                              </svg>
+                              <span>May 5, 2025</span>
+                          </div>
+                          <div class="webinar-card-detail">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                  <circle cx="12" cy="12" r="10"></circle>
+                                  <polyline points="12 6 12 12 16 14"></polyline>
+                              </svg>
+                              <span>3:00 PM - 5:00 PM</span>
+                          </div>
+                          <div class="webinar-card-detail">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                  <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                                  <circle cx="12" cy="7" r="4"></circle>
+                              </svg>
+                              <span>Leonardo Hoyla</span>
+                          </div>
+                      </div>
+                      <p>An introduction to cloud computing concepts, services, and deployment models. Learn how to leverage cloud platforms for scalable and efficient applications.</p>
+                      <a href="https://zoom.us" target="_blank" class="btn btn-secondary">Join Webinar</a>
+                  </div>
+              </div>
+              
+              <div class="webinar-card">
+                  <div class="webinar-card-image">
+                      <img src="../images/logo/ccs.png" alt="Mobile App Development Webinar">
+                      <div class="webinar-date">
+                          <div class="date-day">20</div>
+                          <div class="date-month">May</div>
+                      </div>
+                  </div>
+                  <div class="webinar-card-content">
+                      <h3>Mobile App Development Trends 2025</h3>
+                      <div class="webinar-card-details">
+                          <div class="webinar-card-detail">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                  <rect width="18" height="18" x="3" y="4" rx="2" ry="2"></rect>
+                                  <line x1="16" x2="16" y1="2" y2="6"></line>
+                                  <line x1="8" x2="8" y1="2" y2="6"></line>
+                              </svg>
+                              <span>May 20, 2025</span>
+                          </div>
+                          <div class="webinar-card-detail">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                  <circle cx="12" cy="12" r="10"></circle>
+                                  <polyline points="12 6 12 12 16 14"></polyline>
+                              </svg>
+                              <span>2:00 PM - 4:00 PM</span>
+                          </div>
+                          <div class="webinar-card-detail">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                  <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                                  <circle cx="12" cy="7" r="4"></circle>
+                              </svg>
+                              <span>Yvonne Tenio</span>
+                          </div>
+                      </div>
+                      <p>Stay updated with the latest trends and technologies in mobile application development for iOS and Android platforms.</p>
+                      <a href="https://zoom.us" target="_blank" class="btn btn-secondary">Join Webinar</a>
+                  </div>
+              </div>
+          </div>
+          
+          <div class="view-all-container">
+              <a href="#" class="btn btn-primary">View All Upcoming Webinars</a>
+          </div>
+      </div>
+      
+      <!-- Past Webinars -->
+      <div class="webinars-tab-content" id="past-webinars">
+          <div class="webinars-grid">
+              <div class="webinar-card past-webinar">
+                  <div class="webinar-card-image">
+                      <img src="../images/logo/ccs.png" alt="Database Design Webinar">
+                      <div class="webinar-date">
+                          <div class="date-day">15</div>
+                          <div class="date-month">Feb</div>
+                      </div>
+                  </div>
+                  <div class="webinar-card-content">
+                      <h3>Advanced Database Design and Optimization</h3>
+                      <div class="webinar-card-details">
+                          <div class="webinar-card-detail">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                  <rect width="18" height="18" x="3" y="4" rx="2" ry="2"></rect>
+                                  <line x1="16" x2="16" y1="2" y2="6"></line>
+                                  <line x1="8" x2="8" y1="2" y2="6"></line>
+                              </svg>
+                              <span>February 15, 2025</span>
+                          </div>
+                          <div class="webinar-card-detail">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                  <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                                  <circle cx="12" cy="7" r="4"></circle>
+                              </svg>
+                              <span>Marianne Diaz</span>
+                          </div>
+                      </div>
+                      <p>Techniques for designing efficient database schemas, query optimization, and performance tuning for modern applications.</p>
+                      <div class="past-webinar-actions">
+                          <span class="past-webinar-badge">Completed</span>
+                          <a href="#" class="view-recording-link" data-video="dQw4w9WgXcQ" data-title="Advanced Database Design and Optimization">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                  <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                              </svg>
+                              View Recording
+                          </a>
+                      </div>
+                  </div>
+              </div>
+              
+              <div class="webinar-card past-webinar">
+                  <div class="webinar-card-image">
+                      <img src="../images/logo/ccs.png" alt="DevOps Webinar">
+                      <div class="webinar-date">
+                          <div class="date-day">28</div>
+                          <div class="date-month">Jan</div>
+                      </div>
+                  </div>
+                  <div class="webinar-card-content">
+                      <h3>DevOps Practices for Modern Development Teams</h3>
+                      <div class="webinar-card-details">
+                          <div class="webinar-card-detail">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                  <rect width="18" height="18" x="3" y="4" rx="2" ry="2"></rect>
+                                  <line x1="16" x2="16" y1="2" y2="6"></line>
+                                  <line x1="8" x2="8" y1="2" y2="6"></line>
+                              </svg>
+                              <span>January 28, 2025</span>
+                          </div>
+                          <div class="webinar-card-detail">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                  <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                                  <circle cx="12" cy="7" r="4"></circle>
+                              </svg>
+                              <span>Marnuld Climaco</span>
+                          </div>
+                      </div>
+                      <p>Learn how to implement continuous integration, continuous deployment, and infrastructure as code to streamline development workflows.</p>
+                      <div class="past-webinar-actions">
+                          <span class="past-webinar-badge">Completed</span>
+                          <a href="#" class="view-recording-link" data-video="dQw4w9WgXcQ" data-title="DevOps Practices for Modern Development Teams">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                  <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                              </svg>
+                              View Recording
+                          </a>
+                      </div>
+                  </div>
+              </div>
+              
+              <div class="webinar-card past-webinar">
+                  <div class="webinar-card-image">
+                      <img src="../images/logo/ccs.png" alt="UX Design Webinar">
+                      <div class="webinar-date">
+                          <div class="date-day">10</div>
+                          <div class="date-month">Jan</div>
+                      </div>
+                  </div>
+                  <div class="webinar-card-content">
+                      <h3>UX Design Principles for Developers</h3>
+                      <div class="webinar-card-details">
+                          <div class="webinar-card-detail">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                  <rect width="18" height="18" x="3" y="4" rx="2" ry="2"></rect>
+                                  <line x1="16" x2="16" y1="2" y2="6"></line>
+                                  <line x1="8" x2="8" y1="2" y2="6"></line>
+                              </svg>
+                              <span>January 10, 2025</span>
+                          </div>
+                          <div class="webinar-card-detail">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                  <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                                  <circle cx="12" cy="7" r="4"></circle>
+                              </svg>
+                              <span>Mae Oberez</span>
+                          </div>
+                      </div>
+                      <p>Essential user experience design principles that every developer should know to create more user-friendly applications.</p>
+                      <div class="past-webinar-actions">
+                          <span class="past-webinar-badge">Completed</span>
+                          <a href="#" class="view-recording-link" data-video="dQw4w9WgXcQ" data-title="UX Design Principles for Developers">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                  <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                              </svg>
+                              View Recording
+                          </a>
+                      </div>
+                  </div>
+              </div>
+              
+              <div class="webinar-card past-webinar">
+                  <div class="webinar-card-image">
+                      <img src="../images/logo/ccs.png" alt="Data Science Webinar">
+                      <div class="webinar-date">
+                          <div class="date-day">05</div>
+                          <div class="date-month">Dec</div>
+                      </div>
+                  </div>
+                  <div class="webinar-card-content">
+                      <h3>Introduction to Data Science with Python</h3>
+                      <div class="webinar-card-details">
+                          <div class="webinar-card-detail">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                  <rect width="18" height="18" x="3" y="4" rx="2" ry="2"></rect>
+                                  <line x1="16" x2="16" y1="2" y2="6"></line>
+                                  <line x1="8" x2="8" y1="2" y2="6"></line>
+                              </svg>
+                              <span>December 5, 2024</span>
+                          </div>
+                          <div class="webinar-card-detail">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                  <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                                  <circle cx="12" cy="7" r="4"></circle>
+                              </svg>
+                              <span>Haidee Galdo</span>
+                          </div>
+                      </div>
+                      <p>Getting started with data science using Python, including data manipulation, visualization, and basic machine learning concepts.</p>
+                      <div class="past-webinar-actions">
+                          <span class="past-webinar-badge">Completed</span>
+                          <a href="#" class="view-recording-link" data-video="dQw4w9WgXcQ" data-title="Introduction to Data Science with Python">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                  <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                              </svg>
+                              View Recording
+                          </a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          
+          <div class="view-all-container">
+              <a href="#" class="btn btn-primary">View All Past Webinars</a>
+          </div>
+      </div>
+  </div>
+</section>
+
+<!-- Technical Requirements Section -->
+<section class="webinar-technical-section">
+  <div class="container">
+      <div class="section-header">
+          <h2>Technical Requirements</h2>
+          <p>Ensure you have everything needed to participate in our webinars</p>
+      </div>
+      
+      <div class="technical-requirements-container">
+          <div class="technical-requirement">
+              <div class="requirement-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect width="20" height="14" x="2" y="3" rx="2" ry="2"></rect>
+                      <line x1="8" x2="16" y1="21" y2="21"></line>
+                      <line x1="12" x2="12" y1="17" y2="21"></line>
+                  </svg>
+              </div>
+              <div class="requirement-content">
+                  <h3>Device</h3>
+                  <p>Desktop, laptop, tablet, or smartphone with an updated operating system</p>
+              </div>
+          </div>
+          
+          <div class="technical-requirement">
+              <div class="requirement-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M12 19l9 2-9-18-9 18 9-2z"></path>
+                  </svg>
+              </div>
+              <div class="requirement-content">
+                  <h3>Internet Connection</h3>
+                  <p>Stable broadband internet connection with minimum 5 Mbps download speed</p>
+              </div>
+          </div>
+          
+          <div class="technical-requirement">
+              <div class="requirement-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M3 18v-6a9 9 0 0 1 18 0v6"></path>
+                      <path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path>
+                  </svg>
+              </div>
+              <div class="requirement-content">
+                  <h3>Audio</h3>
+                  <p>Speakers or headphones for listening to the presentation</p>
+              </div>
+          </div>
+          
+          <div class="technical-requirement">
+              <div class="requirement-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
+                      <circle cx="12" cy="13" r="4"></circle>
+                  </svg>
+              </div>
+              <div class="requirement-content">
+                  <h3>Camera (Optional)</h3>
+                  <p>For interactive sessions where you may want to participate visually</p>
+              </div>
+          </div>
+          
+          <div class="technical-requirement">
+              <div class="requirement-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path>
+                      <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+                      <line x1="12" y1="19" x2="12" y2="23"></line>
+                      <line x1="8" y1="23" x2="16" y2="23"></line>
+                  </svg>
+              </div>
+              <div class="requirement-content">
+                  <h3>Microphone (Optional)</h3>
+                  <p>For asking questions or participating in discussions during Q&A sessions</p>
+              </div>
+          </div>
+          
+          <div class="technical-requirement">
+              <div class="requirement-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M18 3a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3H6a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3V6a3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3h12a3 3 0 0 0 3-3 3 3 0 0 0-3-3z"></path>
+                  </svg>
+              </div>
+              <div class="requirement-content">
+                  <h3>Software</h3>
+                  <p>Zoom, Microsoft Teams, or Google Meet (as specified in the webinar details)</p>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+</main>
+
+<!-- Footer Section -->
+<footer>
+<div class="container">
+  <div class="footer-content">
+      <div class="footer-top">
+          <div class="footer-branding">
+              <div class="footer-logos">
+                  <div class="footer-logo-img">
+                      <img src="../images/logo/sjc.png" alt="Saint Joseph College Logo">
+                  </div>
+                  <div class="footer-logo-img">
+                      <img src="../images/logo/ccs.png" alt="CCS Logo">
+                  </div>
+              </div>
+              <div class="footer-title">College of Computer Studies</div>
+          </div>
+      </div>
+      
+      <div class="footer-main">
+          <div class="footer-left">
+              <div class="footer-about">
+                  <h3>About Us</h3>
+                  <p>The College of Computer Studies at Saint Joseph College is dedicated to providing quality education in computer science and information technology. We empower students with cutting-edge knowledge and skills needed to excel in the rapidly evolving world of technology and computing.</p>
+                  <p>Tunga-tunga, Maasin City, Southern Leyte, Philippines, 6600</p>
+              </div>
+          </div>
+          <div class="footer-links">
+              <div class="footer-column">
+                  <h3>Quick Links</h3>
+                  <ul>
+                      <li><a href="../index.html">Home</a></li>
+                      <li><a href="../index.html#programs">Programs</a></li>
+                      <li><a href="../index.html#news-events">News & Events</a></li>
+                      <li><a href="../index.html#careers">Careers</a></li>
+                      <li><a href="../index.html#testimonials">Testimonials</a></li>
+                  </ul>
+              </div>
+              <div class="footer-column">
+                  <h3>Resources</h3>
+                  <ul>
+                      <li><a href="https://online.sjc.edu.ph/enrollment/index.php" target="_blank">Student Portal</a></li>
+                      <li><a href="#">Faculty Directory</a></li>
+                      <li><a href="#">Research Publications</a></li>
+                      <li><a href="https://online.sjc.edu.ph/library/?content=opac" target="_blank">Library</a></li>
+                  </ul>
+              </div>
+              <div class="footer-column">
+                  <h3>Connect</h3>
+                  <ul>
+                      <li><a href="https://www.facebook.com/profile.php?id=100083430218425" target="_blank">Facebook</a></li>
+                      <li><a href="#">Twitter</a></li>
+                      <li><a href="https://www.linkedin.com/school/saint-joseph-college-maasin-city/posts/?feedView=all" target="_blank">LinkedIn</a></li>
+                      <li><a href="https://www.instagram.com/explore/locations/562812642/saint-joseph-college-maasin-city/" target="_blank">Instagram</a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="footer-bottom">
+      <p>&copy; <span id="currentYear"></span> College of Computer Studies. All Rights Reserved.</p>
+      <div class="footer-bottom-links">
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="terms-of-service.html">Terms of Service</a>
+          <a href="sitemap.html">Sitemap</a>
+      </div>
+  </div>
+</div>
+</footer>
+
+<!-- Webinar Modal -->
+<div class="webinar-modal" id="webinarModal">
+  <div class="webinar-modal-content">
+      <div class="webinar-modal-header">
+          <h3 class="webinar-modal-title" id="webinarModalTitle">Webinars on March 25, 2025</h3>
+          <button class="webinar-modal-close" id="webinarModalClose">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="18" y1="6" x2="6" y2="18"></line>
+                  <line x1="6" y1="6" x2="18" y2="18"></line>
+              </svg>
+          </button>
+      </div>
+      <div class="webinar-modal-body" id="webinarModalBody">
+          <ul class="webinar-modal-list" id="webinarModalList">
+              <!-- Webinar details will be populated by JavaScript -->
+          </ul>
+      </div>
+      <div class="webinar-modal-footer">
+          <button class="btn btn-secondary" id="webinarModalClose2">Close</button>
+      </div>
+  </div>
+</div>
+
+<!-- Webinar Video Modal -->
+<div class="webinar-video-modal" id="webinarVideoModal">
+  <div class="webinar-video-container">
+      <div class="webinar-video-header">
+          <h3 class="webinar-video-title" id="webinarVideoTitle">Webinar Recording</h3>
+          <button class="webinar-video-close" id="webinarVideoClose">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="18" y1="6" x2="6" y2="18"></line>
+                  <line x1="6" y1="6" x2="18" y2="18"></line>
+              </svg>
+          </button>
+      </div>
+      <div class="webinar-video-content" id="webinarVideoContainer">
+          <!-- Video iframe will be inserted here -->
+      </div>
+  </div>
+</div>
+
+<!-- Chat Assistant -->
+<div id="chatAssistant" class="chat-assistant">
+  <div class="chat-toggle" id="chatToggle">
+      <div class="chat-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+          </svg>
+      </div>
+      <span class="chat-label">AI Assistant</span>
+  </div>
+
+  <div class="chat-window" id="chatWindow">
+      <div class="chat-header">
+          <div class="chat-header-info">
+              <div class="chat-avatar">
+                  <img src="../images/logo/ccs.png" alt="CCS Assistant">
+              </div>
+              <div class="chat-title">
+                  <h3>CCS Tech Assistant</h3>
+                  <span class="chat-status">Online</span>
+              </div>
+          </div>
+          <button class="chat-close" id="chatClose">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="18" y1="6" x2="6" y2="18"></line>
+                  <line x1="6" y1="6" x2="18" y2="18"></line>
+              </svg>
+          </button>
+      </div>
+      
+      <div class="chat-messages" id="chatMessages"></div>
+      
+      <div class="chat-quick-questions" id="chatQuickQuestions">
+          <button class="quick-question" data-question="How do I join a webinar?">How to join?</button>
+          <button class="quick-question" data-question="Are webinars free to attend?">Are webinars free?</button>
+          <button class="quick-question" data-question="Will I get a recording if I miss a webinar?">Get recordings?</button>
+          <button class="quick-question" data-question="What technology do I need to join?">Tech requirements?</button>
+      </div>
+      
+      <div class="chat-input-container">
+          <input type="text" id="chatInput" class="chat-input" placeholder="Type your question here...">
+          <button id="chatSend" class="chat-send">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+          </button>
+      </div>
+  </div>
+</div>
+
+<!-- JavaScript Files -->
+<script src="../js/main.js"></script>
+<script src="../js/chat-assistant.js"></script>
+<script src="../js/webinars.js"></script>
+<script>
+  document.getElementById('currentYear').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
+

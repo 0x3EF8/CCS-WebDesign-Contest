@@ -1,0 +1,1226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>College of Computer Studies | Web Design Contest</title>
+
+<!-- Stylesheets -->
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/header.css">
+<link rel="stylesheet" href="css/hero.css">
+<link rel="stylesheet" href="css/programs.css">
+<link rel="stylesheet" href="css/careers.css">
+<link rel="stylesheet" href="css/testimonials.css">
+<link rel="stylesheet" href="css/faculty.css">
+<link rel="stylesheet" href="css/contact.css">
+<link rel="stylesheet" href="css/footer.css">
+<link rel="stylesheet" href="css/modals.css">
+<link rel="stylesheet" href="css/theme-switcher.css">
+<link rel="stylesheet" href="css/chat-assistant.css">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- Loading Screen -->
+<div class="loading-screen" id="loadingScreen">
+  <div class="loader">
+      <div class="loader-circle"></div>
+      <div class="loader-text">Loading...</div>
+  </div>
+</div>
+
+<!-- Header & Navigation -->
+<header>
+<div class="container">
+    <div class="logo">
+        <div class="logo-image">
+            <img src="images/logo/ccs.png" alt="CCS Logo">
+        </div>
+        <span class="logo-text">
+            <span class="logo-text-full">College of Computer Studies</span>
+            <span class="logo-text-short">CCS</span>
+        </span>
+    </div>
+    <nav>
+        <div class="mobile-controls">
+          <div class="theme-switch-wrapper mobile-only">
+              <div class="theme-switch">
+                  <label class="theme-switch-label">
+                      <input type="checkbox" class="theme-switch-checkbox" id="themeSwitchMobile">
+                      <span class="theme-switch-slider">
+                          <span class="theme-switch-icon sun-icon">☀️</span>
+                          <span class="theme-switch-icon moon-icon">🌙</span>
+                      </span>
+                  </label>
+              </div>
+          </div>
+          <div class="menu-toggle" id="menuToggle">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+          </div>
+        </div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#programs">Programs</a></li>
+            <li><a href="#careers">Careers</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#faculty">Faculty</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li class="desktop-only">
+              <div class="theme-switch-wrapper">
+                  <div class="theme-switch">
+                      <label class="theme-switch-label">
+                          <input type="checkbox" class="theme-switch-checkbox" id="themeSwitchDesktop">
+                          <span class="theme-switch-slider">
+                              <span class="theme-switch-icon sun-icon">☀️</span>
+                              <span class="theme-switch-icon moon-icon">🌙</span>
+                          </span>
+                      </label>
+                  </div>
+              </div>
+            </li>
+        </ul>
+    </nav>
+</div>
+</header>
+
+<main>
+<!-- Hero Section -->
+<section id="home" class="hero">
+  <div class="hero-overlay"></div>
+  <div class="container">
+      <div class="hero-content">
+          <h1>College of Computer Studies</h1>
+          <h2 class="hero-subtitle">An Open Door to Limitless Horizon</h2>
+          <div class="hero-description">
+            <p>Empowering students with cutting-edge knowledge and skills needed to excel in the rapidly evolving world of technology and computing.</p>
+          </div>
+          <div class="hero-buttons">
+              <a href="#programs" class="btn btn-primary">Explore Programs</a>
+              <a href="#contact" class="btn btn-secondary">Apply Now</a>
+          </div>
+      </div>
+      <div class="hero-image">
+          <div class="img-effect">
+              <div class="block">
+                  <div class="side -main"></div>
+                  <div class="side -left"></div>
+              </div>
+              <div class="block">
+                  <div class="side -main"></div>
+                  <div class="side -left"></div>
+              </div>
+              <div class="block">
+                  <div class="side -main"></div>
+                  <div class="side -left"></div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="scroll-indicator">
+      <div class="mouse">
+          <div class="wheel"></div>
+      </div>
+      <div class="arrow">
+          <span></span>
+          <span></span>
+      </div>
+  </div>
+</section>
+
+<!-- Programs Section -->
+<section id="programs" class="programs">
+    <div class="container">
+        <div class="section-header">
+            <h2>Programs Offered</h2>
+            <p>Discover our cutting-edge programs designed to prepare you for the future of technology</p>
+        </div>
+        <div class="program-cards">
+          <div class="program-card">
+              <div class="program-icon">
+                  <div class="icon-bg"></div>
+                  <span class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="16 18 22 12 16 6"></polyline>
+              <polyline points="8 6 2 12 8 18"></polyline>
+          </svg>
+      </span>
+              </div>
+              <h3>Computer Science</h3>
+              <p>Dive deep into algorithms, data structures, and computational theory to solve complex problems.</p>
+              <a href="pages/cs.html" class="btn btn-secondary">Learn More</a>
+          </div>
+          <div class="program-card">
+              <div class="program-icon">
+                  <div class="icon-bg"></div>
+                  <span class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="2" y1="12" x2="22" y2="12"></line>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+          </svg>
+      </span>
+              </div>
+              <h3>Information Technology</h3>
+              <p>Master the skills needed to design, implement, and manage information systems.</p>
+              <a href="pages/it.html" class="btn btn-secondary">Learn More</a>
+          </div>
+        </div>
+        <div class="compare-programs-container">
+<a href="pages/compare.html" class="btn btn-primary">Compare CS & IT Programs</a>
+</div>
+    </div>
+</section>
+
+<!-- News & Events Section -->
+<section id="news-events" class="news-events">
+  <div class="container">
+      <div class="section-header">
+          <h2>News & Events</h2>
+          <p>Stay updated with the latest happenings at the College of Computer Studies</p>
+      </div>
+      
+      <div class="news-events-tabs">
+          <button class="news-events-tab active" data-tab="news">Latest News</button>
+          <button class="news-events-tab" data-tab="events">Upcoming Events</button>
+          <button class="news-events-tab" data-tab="webinars">Webinars</button>
+      </div>
+      
+      <!-- News Content -->
+      <div class="news-events-content active" id="news-content">
+          <div class="news-grid">
+              <div class="news-item">
+                  <div class="news-item-image">
+                      <img src="images/logo/ccs.png" alt="CCS Team Wins National Hackathon">
+                      <div class="news-category-badge">Achievements</div>
+                  </div>
+                  <div class="news-item-content">
+                      <div class="news-meta">
+                          <span class="news-date">March 15, 2025</span>
+                      </div>
+                      <h3>CCS Team Wins National Hackathon Championship</h3>
+                      <p>A team of five Computer Science students secured first place at the National Collegiate Hackathon 2025, developing an innovative solution for water resource management.</p>
+                      <a href="pages/news.html" class="read-more">Read More</a>
+                  </div>
+              </div>
+              
+              <div class="news-item">
+                  <div class="news-item-image">
+                      <img src="images/logo/ccs.png" alt="New Computer Lab">
+                      <div class="news-category-badge">Facilities</div>
+                  </div>
+                  <div class="news-item-content">
+                      <div class="news-meta">
+                          <span class="news-date">March 1, 2025</span>
+                      </div>
+                      <h3>State-of-the-Art Computer Laboratory Now Open</h3>
+                      <p>The College of Computer Studies has unveiled its new high-performance computing laboratory featuring the latest hardware and software.</p>
+                      <a href="pages/news.html" class="read-more">Read More</a>
+                  </div>
+              </div>
+              
+              <div class="news-item">
+                  <div class="news-item-image">
+                      <img src="images/logo/ccs.png" alt="Industry Partnership">
+                      <div class="news-category-badge">Partnerships</div>
+                  </div>
+                  <div class="news-item-content">
+                      <div class="news-meta">
+                          <span class="news-date">February 12, 2025</span>
+                      </div>
+                      <h3>CCS Establishes Industry Partnership with TechCorp</h3>
+                      <p>A new partnership will provide internship opportunities, scholarships, and industry mentorship for students.</p>
+                      <a href="pages/news.html" class="read-more">Read More</a>
+                  </div>
+              </div>
+          </div>
+          
+          <div class="view-all-container">
+              <a href="pages/news.html" class="btn btn-primary">View All News</a>
+          </div>
+      </div>
+      
+      <!-- Events Content -->
+      <div class="news-events-content" id="events-content">
+          <div class="events-grid">
+              <div class="event-card">
+                  <div class="event-card-image">
+                      <img src="images/logo/ccs.png" alt="Tech Summit 2025">
+                      <div class="event-date">
+                          <div class="date-day">15</div>
+                          <div class="date-month">Apr</div>
+                      </div>
+                  </div>
+                  <div class="event-card-content">
+                      <h3>CCS Tech Summit 2025: The Future of Computing</h3>
+                      <div class="event-card-details">
+                          <div class="event-card-detail">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                  <rect width="18" height="18" x="3" y="4" rx="2" ry="2"></rect>
+                                  <line x1="16" x2="16" y1="2" y2="6"></line>
+                                  <line x1="8" x2="8" y1="2" y2="6"></line>
+                              </svg>
+                              <span>April 15-16, 2025</span>
+                          </div>
+                          <div class="event-card-detail">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                  <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                                  <circle cx="12" cy="10" r="3"></circle>
+                              </svg>
+                              <span>SJC Auditorium</span>
+                          </div>
+                      </div>
+                      <p>Join us for keynote speeches, workshops, and panel discussions on emerging technologies in AI, cybersecurity, and cloud computing.</p>
+                      <a href="pages/events.html" class="btn btn-secondary">Learn More</a>
+                  </div>
+              </div>
+              
+              <div class="event-card">
+                  <div class="event-card-image">
+                      <img src="images/logo/ccs.png" alt="UI/UX Workshop">
+                      <div class="event-date">
+                          <div class="date-day">25</div>
+                          <div class="date-month">Mar</div>
+                      </div>
+                  </div>
+                  <div class="event-card-content">
+                      <h3>UI/UX Design Workshop for Beginners</h3>
+                      <div class="event-card-details">
+                          <div class="event-card-detail">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                  <rect width="18" height="18" x="3" y="4" rx="2" ry="2"></rect>
+                                  <line x1="16" x2="16" y1="2" y2="6"></line>
+                                  <line x1="8" x2="8" y1="2" y2="6"></line>
+                              </svg>
+                              <span>March 25, 2025</span>
+                          </div>
+                          <div class="event-card-detail">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                  <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                                  <circle cx="12" cy="10" r="3"></circle>
+                              </svg>
+                              <span>CCS Design Lab</span>
+                          </div>
+                      </div>
+                      <p>Learn the fundamentals of UI/UX design in this hands-on workshop led by industry professionals from DesignHub.</p>
+                      <a href="pages/events.html" class="btn btn-secondary">Learn More</a>
+                  </div>
+              </div>
+              
+              <div class="event-card">
+                  <div class="event-card-image">
+                      <img src="images/logo/ccs.png" alt="Hackathon">
+                      <div class="event-date">
+                          <div class="date-day">10</div>
+                          <div class="date-month">Apr</div>
+                      </div>
+                  </div>
+                  <div class="event-card-content">
+                      <h3>CodeFest Hackathon: Innovate for Good</h3>
+                      <div class="event-card-details">
+                          <div class="event-card-detail">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                  <rect width="18" height="18" x="3" y="4" rx="2" ry="2"></rect>
+                                  <line x1="16" x2="16" y1="2" y2="6"></line>
+                                  <line x1="8" x2="8" y1="2" y2="6"></line>
+                              </svg>
+                              <span>April 10-11, 2025</span>
+                          </div>
+                          <div class="event-card-detail">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                  <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                                  <circle cx="12" cy="10" r="3"></circle>
+                              </svg>
+                              <span>CCS Innovation Center</span>
+                          </div>
+                      </div>
+                      <p>Join our 48-hour hackathon to develop tech solutions addressing local community challenges.</p>
+                      <a href="pages/events.html" class="btn btn-secondary">Learn More</a>
+                  </div>
+              </div>
+          </div>
+          
+          <div class="view-all-container">
+              <a href="pages/events.html" class="btn btn-primary">View All Events</a>
+          </div>
+      </div>
+      
+      <!-- Webinars Content -->
+      <div class="news-events-content" id="webinars-content">
+          <div class="webinars-grid">
+              <div class="webinar-item">
+                  <div class="webinar-item-image">
+                      <img src="images/logo/ccs.png" alt="AI and Machine Learning Webinar">
+                      <div class="webinar-date">
+                          <div class="date-day">15</div>
+                          <div class="date-month">Apr</div>
+                      </div>
+                  </div>
+                  <div class="webinar-item-content">
+                      <h3>AI and Machine Learning: The Future of Technology</h3>
+                      <div class="webinar-item-details">
+                          <div class="webinar-item-detail">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                  <circle cx="12" cy="12" r="10"></circle>
+                                  <polyline points="12 6 12 12 16 14"></polyline>
+                              </svg>
+                              <span>10:00 AM - 12:00 PM</span>
+                          </div>
+                          <div class="webinar-item-detail">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                  <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                                  <circle cx="12" cy="7" r="4"></circle>
+                              </svg>
+                              <span>Dr. Ana Lim</span>
+                          </div>
+                      </div>
+                      <p>Explore cutting-edge developments in AI and machine learning with practical demonstrations and real-world use cases.</p>
+                      <a href="pages/webinars.html" class="read-more">Learn More</a>
+                  </div>
+              </div>
+              
+              <div class="webinar-item">
+                  <div class="webinar-item-image">
+                      <img src="images/logo/ccs.png" alt="Web Development Webinar">
+                      <div class="webinar-date">
+                          <div class="date-day">25</div>
+                          <div class="date-month">Mar</div>
+                      </div>
+                  </div>
+                  <div class="webinar-item-content">
+                      <h3>Introduction to Web Development with React</h3>
+                      <div class="webinar-item-details">
+                          <div class="webinar-item-detail">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                  <circle cx="12" cy="12" r="10"></circle>
+                                  <polyline points="12 6 12 12 16 14"></polyline>
+                              </svg>
+                              <span>2:00 PM - 4:00 PM</span>
+                          </div>
+                          <div class="webinar-item-detail">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                  <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                                  <circle cx="12" cy="7" r="4"></circle>
+                              </svg>
+                              <span>Dr. Maria Santos</span>
+                          </div>
+                      </div>
+                      <p>Learn the fundamentals of modern web development using React, covering component-based architecture and interactive UIs.</p>
+                      <a href="pages/webinars.html" class="read-more">Learn More</a>
+                  </div>
+              </div>
+              
+              <div class="webinar-item">
+                  <div class="webinar-item-image">
+                      <img src="images/logo/ccs.png" alt="Cybersecurity Webinar">
+                      <div class="webinar-date">
+                          <div class="date-day">10</div>
+                          <div class="date-month">Apr</div>
+                      </div>
+                  </div>
+                  <div class="webinar-item-content">
+                      <h3>Cybersecurity Best Practices for Developers</h3>
+                      <div class="webinar-item-details">
+                          <div class="webinar-item-detail">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                  <circle cx="12" cy="12" r="10"></circle>
+                                  <polyline points="12 6 12 12 16 14"></polyline>
+                              </svg>
+                              <span>1:00 PM - 3:00 PM</span>
+                          </div>
+                          <div class="webinar-item-detail">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                  <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                                  <circle cx="12" cy="7" r="4"></circle>
+                              </svg>
+                              <span>John Reyes</span>
+                          </div>
+                      </div>
+                      <p>Discover essential security practices every developer should know, including secure coding and vulnerability assessment.</p>
+                      <a href="pages/webinars.html" class="read-more">Learn More</a>
+                  </div>
+              </div>
+          </div>
+          
+          <div class="view-all-container">
+              <a href="pages/webinars.html" class="btn btn-primary">View All Webinars</a>
+          </div>
+      </div>
+  </div>
+</section>
+
+<!-- Careers Section -->
+<section id="careers" class="careers">
+  <div class="container">
+      <div class="section-header">
+          <h2>Career Opportunities</h2>
+          <p>Our graduates are prepared for diverse and rewarding careers in the tech industry</p>
+      </div>
+      
+      <div class="careers-container">
+          <div class="careers-sidebar">
+              <div class="career-nav">
+                  <button class="career-nav-item active" data-career="software">
+                      <div class="career-nav-icon">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                              <polyline points="16 18 22 12 16 6"></polyline>
+                              <polyline points="8 6 2 12 8 18"></polyline>
+                          </svg>
+                      </div>
+                      <span>Software Development</span>
+                  </button>
+                  <button class="career-nav-item" data-career="data">
+                      <div class="career-nav-icon">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                              <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                          </svg>
+                      </div>
+                      <span>Data & Analytics</span>
+                  </button>
+                  <button class="career-nav-item" data-career="security">
+                      <div class="career-nav-icon">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                              <rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect>
+                              <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                          </svg>
+                      </div>
+                      <span>Cybersecurity</span>
+                  </button>
+                  <button class="career-nav-item" data-career="management">
+                      <div class="career-nav-icon">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                              <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                              <circle cx="9" cy="7" r="4"></circle>
+                              <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                          </svg>
+                      </div>
+                      <span>IT Management</span>
+                  </button>
+              </div>
+          </div>
+          
+          <div class="careers-content">
+              <div class="career-panel active" id="software-panel">
+                  <div class="career-header">
+                      <h3>Software Development</h3>
+                      <div class="career-stats">
+                          <div class="career-stat">
+                              <span class="stat-value">$105K</span>
+                              <span class="stat-label">Avg. Salary</span>
+                          </div>
+                          <div class="career-stat">
+                              <span class="stat-value">22%</span>
+                              <span class="stat-label">Growth Rate</span>
+                          </div>
+                      </div>
+                  </div>
+                  
+                  <div class="career-description">
+                      <p>Software development is a dynamic field focused on creating, designing, and maintaining applications, frameworks, and software systems. Our graduates excel in various programming languages and development methodologies.</p>
+                  </div>
+                  
+                  <div class="career-positions">
+                      <div class="position-item">
+                          <div class="position-title">Software Engineer</div>
+                          <div class="position-details">
+                              <p>Design, develop, and maintain software systems and applications using programming languages like Java, Python, and C++.</p>
+                              <div class="position-skills">
+                                  <span>Java</span>
+                                  <span>Python</span>
+                                  <span>JavaScript</span>
+                                  <span>Problem Solving</span>
+                              </div>
+                          </div>
+                      </div>
+                      
+                      <div class="position-item">
+                          <div class="position-title">Full-Stack Developer</div>
+                          <div class="position-details">
+                              <p>Create complete web applications by working on both front-end and back-end development, database design, and server configuration.</p>
+                              <div class="position-skills">
+                                  <span>React</span>
+                                  <span>Node.js</span>
+                                  <span>MongoDB</span>
+                                  <span>AWS</span>
+                              </div>
+                          </div>
+                      </div>
+                      
+                      <div class="position-item">
+                          <div class="position-title">Mobile App Developer</div>
+                          <div class="position-details">
+                              <p>Build applications for mobile devices across iOS and Android platforms using native or cross-platform frameworks.</p>
+                              <div class="position-skills">
+                                  <span>Swift</span>
+                                  <span>Kotlin</span>
+                                  <span>React Native</span>
+                                  <span>Flutter</span>
+                              </div>
+                          </div>
+                      </div>
+                      
+                      <div class="position-item">
+                          <div class="position-title">Game Developer</div>
+                          <div class="position-details">
+                              <p>Create interactive gaming experiences by designing game mechanics, implementing features, and optimizing performance.</p>
+                              <div class="position-skills">
+                                  <span>Unity</span>
+                                  <span>C#</span>
+                                  <span>3D Modeling</span>
+                                  <span>Game Physics</span>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              
+              <div class="career-panel" id="data-panel">
+                  <div class="career-header">
+                      <h3>Data & Analytics</h3>
+                      <div class="career-stats">
+                          <div class="career-stat">
+                              <span class="stat-value">$120K</span>
+                              <span class="stat-label">Avg. Salary</span>
+                          </div>
+                          <div class="career-stat">
+                              <span class="stat-value">28%</span>
+                              <span class="stat-label">Growth Rate</span>
+                          </div>
+                      </div>
+                  </div>
+                  
+                  <div class="career-description">
+                      <p>Data professionals extract insights from complex datasets to drive business decisions. Our program equips students with statistical analysis, machine learning, and data visualization skills needed in this high-demand field.</p>
+                  </div>
+                  
+                  <div class="career-positions">
+                      <div class="position-item">
+                          <div class="position-title">Data Scientist</div>
+                          <div class="position-details">
+                              <p>Apply advanced analytics, statistical methods, and machine learning to extract insights and solve complex business problems.</p>
+                              <div class="position-skills">
+                                  <span>Python</span>
+                                  <span>Machine Learning</span>
+                                  <span>Statistics</span>
+                                  <span>SQL</span>
+                              </div>
+                          </div>
+                      </div>
+                      
+                      <div class="position-item">
+                          <div class="position-title">Data Analyst</div>
+                          <div class="position-details">
+                              <p>Collect, process, and analyze data to help organizations make better business decisions through reports and visualizations.</p>
+                              <div class="position-skills">
+                                  <span>SQL</span>
+                                  <span>Excel</span>
+                                  <span>Tableau</span>
+                                  <span>Power BI</span>
+                              </div>
+                          </div>
+                      </div>
+                      
+                      <div class="position-item">
+                          <div class="position-title">Business Intelligence Analyst</div>
+                          <div class="position-details">
+                              <p>Transform data into actionable insights by creating dashboards and reports that drive strategic business decisions.</p>
+                              <div class="position-skills">
+                                  <span>Data Warehousing</span>
+                                  <span>ETL</span>
+                                  <span>SQL</span>
+                                  <span>Data Modeling</span>
+                              </div>
+                          </div>
+                      </div>
+                      
+                      <div class="position-item">
+                          <div class="position-title">Machine Learning Engineer</div>
+                          <div class="position-details">
+                              <p>Design and implement machine learning systems and algorithms that can learn from and make predictions based on data.</p>
+                              <div class="position-skills">
+                                  <span>TensorFlow</span>
+                                  <span>PyTorch</span>
+                                  <span>Deep Learning</span>
+                                  <span>NLP</span>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              
+              <div class="career-panel" id="security-panel">
+                  <div class="career-header">
+                      <h3>Cybersecurity</h3>
+                      <div class="career-stats">
+                          <div class="career-stat">
+                              <span class="stat-value">$115K</span>
+                              <span class="stat-label">Avg. Salary</span>
+                          </div>
+                          <div class="career-stat">
+                              <span class="stat-value">33%</span>
+                              <span class="stat-label">Growth Rate</span>
+                          </div>
+                      </div>
+                  </div>
+                  
+                  <div class="career-description">
+                      <p>Cybersecurity professionals protect organizations from digital threats and vulnerabilities. Our program provides comprehensive training in security principles, ethical hacking, and defense strategies.</p>
+                  </div>
+                  
+                  <div class="career-positions">
+                      <div class="position-item">
+                          <div class="position-title">Security Analyst</div>
+                          <div class="position-details">
+                              <p>Monitor and analyze security systems to protect organizations from cyber threats, vulnerabilities, and attacks.</p>
+                              <div class="position-skills">
+                                  <span>SIEM</span>
+                                  <span>Threat Detection</span>
+                                  <span>Incident Response</span>
+                                  <span>Network Security</span>
+                              </div>
+                          </div>
+                      </div>
+                      
+                      <div class="position-item">
+                          <div class="position-title">Penetration Tester</div>
+                          <div class="position-details">
+                              <p>Simulate cyber attacks to identify and fix security vulnerabilities before malicious hackers can exploit them.</p>
+                              <div class="position-skills">
+                                  <span>Ethical Hacking</span>
+                                  <span>Vulnerability Assessment</span>
+                                  <span>Kali Linux</span>
+                                  <span>Social Engineering</span>
+                              </div>
+                          </div>
+                      </div>
+                      
+                      <div class="position-item">
+                          <div class="position-title">Security Consultant</div>
+                          <div class="position-details">
+                              <p>Advise organizations on best security practices, risk management, and compliance with industry regulations.</p>
+                              <div class="position-skills">
+                                  <span>Risk Assessment</span>
+                                  <span>Compliance</span>
+                                  <span>Security Frameworks</span>
+                                  <span>GDPR/HIPAA</span>
+                              </div>
+                          </div>
+                      </div>
+                      
+                      <div class="position-item">
+                          <div class="position-title">Security Architect</div>
+                          <div class="position-details">
+                              <p>Design, build, and oversee the implementation of secure network and computer systems to protect against cyber threats.</p>
+                              <div class="position-skills">
+                                  <span>Network Design</span>
+                                  <span>Cloud Security</span>
+                                  <span>IAM</span>
+                                  <span>Zero Trust</span>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              
+              <div class="career-panel" id="management-panel">
+                  <div class="career-header">
+                      <h3>IT Management</h3>
+                      <div class="career-stats">
+                          <div class="career-stat">
+                              <span class="stat-value">$130K</span>
+                              <span class="stat-label">Avg. Salary</span>
+                          </div>
+                          <div class="career-stat">
+                              <span class="stat-value">15%</span>
+                              <span class="stat-label">Growth Rate</span>
+                          </div>
+                      </div>
+                  </div>
+                  
+                  <div class="career-description">
+                      <p>IT Management professionals lead technology initiatives and teams to achieve organizational goals. Our program develops both technical expertise and leadership skills needed for these strategic roles.</p>
+                  </div>
+                  
+                  <div class="career-positions">
+                      <div class="position-item">
+                          <div class="position-title">IT Project Manager</div>
+                          <div class="position-details">
+                              <p>Plan, execute, and close technology projects while managing resources, timelines, and stakeholder expectations.</p>
+                              <div class="position-skills">
+                                  <span>Agile/Scrum</span>
+                                  <span>JIRA</span>
+                                  <span>Risk Management</span>
+                                  <span>Budgeting</span>
+                              </div>
+                          </div>
+                      </div>
+                      
+                      <div class="position-item">
+                          <div class="position-title">CTO/CIO</div>
+                          <div class="position-details">
+                              <p>Provide strategic leadership for an organization's technological vision, resources, and future growth initiatives.</p>
+                              <div class="position-skills">
+                                  <span>Strategic Planning</span>
+                                  <span>Digital Transformation</span>
+                                  <span>Executive Leadership</span>
+                                  <span>Innovation</span>
+                              </div>
+                          </div>
+                      </div>
+                      
+                      <div class="position-item">
+                          <div class="position-title">Systems Administrator</div>
+                          <div class="position-details">
+                              <p>Configure, maintain, and ensure the reliable operation of computer systems, networks, and servers.</p>
+                              <div class="position-skills">
+                                  <span>Windows/Linux</span>
+                                  <span>Active Directory</span>
+                                  <span>Virtualization</span>
+                                  <span>Troubleshooting</span>
+                              </div>
+                          </div>
+                      </div>
+                      
+                      <div class="position-item">
+                          <div class="position-title">IT Consultant</div>
+                          <div class="position-details">
+                              <p>Advise clients on how to use information technology to meet business objectives and overcome challenges.</p>
+                              <div class="position-skills">
+                                  <span>Business Analysis</span>
+                                  <span>Solution Architecture</span>
+                                  <span>Client Management</span>
+                                  <span>Technical Writing</span>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<!-- Testimonials Section -->
+<section id="testimonials" class="testimonials">
+  <div class="container">
+      <div class="section-header">
+          <h2>Student Testimonials</h2>
+          <p>Hear from our students about their experiences and success stories</p>
+      </div>
+      <div class="testimonial-container">
+          <div class="testimonial-slider" id="testimonialSlider">
+              <div class="testimonial-slide active">
+                  <div class="testimonial-content">
+                      <div class="testimonial-quote-icon">❝</div>
+                      <div class="quote">The hands-on experience and industry-focused curriculum at CCS prepared me for my dream job at a leading tech company. The professors are experts in their fields and truly care about student success.</div>
+                      <div class="student-details">
+                          <div class="student-avatar">
+                              <div class="avatar-circle">M</div>
+                          </div>
+                          <div class="student-info">
+                              <div class="student-name">Maria Santos</div>
+                              <div class="student-meta">BS Computer Science, 2022 • Software Engineer at TechCorp</div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="testimonial-slide">
+                  <div class="testimonial-content">
+                      <div class="testimonial-quote-icon">❝</div>
+                      <div class="quote">Participating in the Web Design Contest was a turning point in my career. The skills I developed and the connections I made led directly to my current position. CCS provides opportunities that go beyond the classroom.</div>
+                      <div class="student-details">
+                          <div class="student-avatar">
+                              <div class="avatar-circle">J</div>
+                          </div>
+                          <div class="student-info">
+                              <div class="student-name">John Reyes</div>
+                              <div class="student-meta">BS Information Technology, 2021 • UX Designer at DesignHub</div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="testimonial-slide">
+                  <div class="testimonial-content">
+                      <div class="testimonial-quote-icon">❝</div>
+                      <div class="quote">The cybersecurity program at CCS is cutting-edge. The practical training in ethical hacking and security protocols gave me the confidence to enter the field. I now lead security initiatives at my company.</div>
+                      <div class="student-details">
+                          <div class="student-avatar">
+                              <div class="avatar-circle">A</div>
+                          </div>
+                          <div class="student-info">
+                              <div class="student-name">Ana Lim</div>
+                              <div class="student-meta">BS Cybersecurity, 2023 • Security Analyst at SecureNet</div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="testimonial-controls">
+              <button class="control-btn prev" id="prevBtn">&#10094;</button>
+              <div class="testimonial-dots">
+                  <span class="dot active" data-index="0"></span>
+                  <span class="dot" data-index="1"></span>
+                  <span class="dot" data-index="2"></span>
+              </div>
+              <button class="control-btn next" id="nextBtn">&#10095;</button>
+          </div>
+      </div>
+  </div>
+</section>
+
+<!-- Faculty Section -->
+<section id="faculty" class="faculty">
+  <div class="container">
+      <div class="section-header">
+          <h2>Faculty Highlights</h2>
+          <p>Meet our distinguished faculty members who are leaders in their fields</p>
+      </div>
+      <div class="faculty-grid">
+          <div class="faculty-card">
+              <div class="faculty-image">
+                  <div class="faculty-profile-circle">
+                      <img src="images/logo/ccs.png" alt="Dean Riza Lynn O. Siega">
+                  </div>
+              </div>
+              <div class="faculty-info">
+                  <h3>Dean Riza Lynn O. Siega</h3>
+                  <p class="faculty-title">Dean, College of Computer Studies</p>
+                  <p class="faculty-bio">Leading the College of Computer Studies with expertise in computer science education and research. Committed to academic excellence and student success.</p>
+              </div>
+          </div>
+          <div class="faculty-card">
+              <div class="faculty-image">
+                  <div class="faculty-profile-circle">
+                      <img src="images/logo/ccs.png" alt="Evangeline Javier">
+                  </div>
+              </div>
+              <div class="faculty-info">
+                  <h3>Evangeline Javier</h3>
+                  <p class="faculty-title">Web Development & Programming</p>
+                  <p class="faculty-bio">Experienced educator specializing in web technologies and programming languages. Passionate about helping students build practical skills for the tech industry.</p>
+              </div>
+          </div>
+          <div class="faculty-card">
+              <div class="faculty-image">
+                  <div class="faculty-profile-circle">
+                      <img src="images/logo/ccs.png" alt="Marianne Diaz">
+                  </div>
+              </div>
+              <div class="faculty-info">
+                  <h3>Marianne Diaz</h3>
+                  <p class="faculty-title">Database Systems & Information Management</p>
+                  <p class="faculty-bio">Expert in database design and information systems with industry experience. Focuses on teaching practical database skills and modern data management techniques.</p>
+              </div>
+          </div>
+          
+          <div class="faculty-card hidden-faculty">
+              <div class="faculty-image">
+                  <div class="faculty-profile-circle">
+                      <img src="images/logo/ccs.png" alt="Marnuld Climaco">
+                  </div>
+              </div>
+              <div class="faculty-info">
+                  <h3>Marnuld Climaco</h3>
+                  <p class="faculty-title">Software Engineering & Development</p>
+                  <p class="faculty-bio">Specializes in software engineering methodologies and development practices. Brings real-world experience to the classroom to prepare students for industry challenges.</p>
+              </div>
+          </div>
+          <div class="faculty-card hidden-faculty">
+              <div class="faculty-image">
+                  <div class="faculty-profile-circle">
+                      <img src="images/logo/ccs.png" alt="Leonardo Hoyla">
+                  </div>
+              </div>
+              <div class="faculty-info">
+                  <h3>Leonardo Hoyla</h3>
+                  <p class="faculty-title">Networking & Systems Administration</p>
+                  <p class="faculty-bio">Expert in computer networks and systems administration with extensive technical experience. Dedicated to teaching practical networking skills and infrastructure management.</p>
+              </div>
+          </div>
+          <div class="faculty-card hidden-faculty">
+              <div class="faculty-image">
+                  <div class="faculty-profile-circle">
+                      <img src="images/logo/ccs.png" alt="Haidee Galdo">
+                  </div>
+              </div>
+              <div class="faculty-info">
+                  <h3>Haidee Galdo</h3>
+                  <p class="faculty-title">Data Analytics & Statistics</p>
+                  <p class="faculty-bio">Specializes in data analysis and statistical methods for computer science applications. Helps students develop critical analytical skills for data-driven decision making.</p>
+              </div>
+          </div>
+          <div class="faculty-card hidden-faculty">
+              <div class="faculty-image">
+                  <div class="faculty-profile-circle">
+                      <img src="images/logo/ccs.png" alt="Yvonne Tenio">
+                  </div>
+              </div>
+              <div class="faculty-info">
+                  <h3>Yvonne Tenio</h3>
+                  <p class="faculty-title">Mobile Application Development</p>
+                  <p class="faculty-bio">Expert in mobile technologies and application development across platforms. Guides students in creating innovative mobile solutions using current industry standards.</p>
+              </div>
+          </div>
+          <div class="faculty-card hidden-faculty">
+              <div class="faculty-image">
+                  <div class="faculty-profile-circle">
+                      <img src="images/logo/ccs.png" alt="Mae Oberez">
+                  </div>
+              </div>
+              <div class="faculty-info">
+                  <h3>Mae Oberez</h3>
+                  <p class="faculty-title">Human-Computer Interaction & UX Design</p>
+                  <p class="faculty-bio">Focuses on user experience design and human-computer interaction principles. Combines technical knowledge with design thinking to create user-centered applications.</p>
+              </div>
+          </div>
+          <div class="faculty-card hidden-faculty">
+              <div class="faculty-image">
+                  <div class="faculty-profile-circle">
+                      <img src="images/logo/ccs.png" alt="Dainne Daling">
+                  </div>
+              </div>
+              <div class="faculty-info">
+                  <h3>Dainne Daling</h3>
+                  <p class="faculty-title">Algorithms & Computational Theory</p>
+                  <p class="faculty-bio">Specializes in algorithms, computational theory, and problem-solving techniques. Helps students develop strong analytical and programming skills for complex challenges.</p>
+              </div>
+          </div>
+      </div>
+      
+      <div class="view-more-container">
+          <button id="viewMoreFaculty" class="btn btn-secondary">View More Faculty</button>
+      </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact">
+    <div class="container">
+        <div class="section-header">
+            <h2>Contact Us</h2>
+            <p>Get in touch with us for enrollment information or to learn more about our programs</p>
+        </div>
+        <div class="contact-content">
+            <div class="contact-form">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <select id="subject" name="subject">
+                            <option value="enrollment">Enrollment Information</option>
+                            <option value="programs">Program Inquiries</option>
+                            <option value="general">General Information</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+            <div class="contact-info">
+                <div class="info-item">
+  <div class="info-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+          <circle cx="12" cy="10" r="3"></circle>
+      </svg>
+  </div>
+  <div class="info-content">
+      <h3>Address</h3>
+      <p>Tunga-tunga, Maasin City, Southern Leyte, Philippines, 6600</p>
+  </div>
+</div>
+<div class="info-item">
+  <div class="info-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+      </svg>
+  </div>
+  <div class="info-content">
+      <h3>Phone</h3>
+      <p>(123) 456-7890</p>
+  </div>
+</div>
+<div class="info-item">
+  <div class="info-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+          <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+      </svg>
+  </div>
+  <div class="info-content">
+      <h3>Email</h3>
+      <p>admissions@ccs.edu</p>
+  </div>
+</div>
+                <div class="contest-info">
+                    <h3>Admission Information</h3>
+                    <ul>
+                        <li><strong>Application Deadline:</strong> June 15 for Fall Semester</li>
+                        <li><strong>Requirements:</strong> High school diploma or equivalent</li>
+                        <li><strong>Scholarships:</strong> Merit-based scholarships available</li>
+                        <li><strong>Campus Tours:</strong> Available Monday-Friday, 9am-4pm</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</main>
+
+<!-- Footer Section -->
+<footer>
+<div class="container">
+<div class="footer-content">
+    <div class="footer-top">
+        <div class="footer-branding">
+            <div class="footer-logos">
+                <div class="footer-logo-img">
+                    <img src="images/logo/sjc.png" alt="Saint Joseph College Logo">
+                </div>
+                <div class="footer-logo-img">
+                    <img src="images/logo/ccs.png" alt="CCS Logo">
+                </div>
+            </div>
+            <div class="footer-title">College of Computer Studies</div>
+        </div>
+    </div>
+    
+    <div class="footer-main">
+        <div class="footer-left">
+            <div class="footer-about">
+                <h3>About Us</h3>
+                <p>The College of Computer Studies at Saint Joseph College is dedicated to providing quality education in computer science and information technology. We empower students with cutting-edge knowledge and skills needed to excel in the rapidly evolving world of technology and computing.</p>
+                <p>Tunga-tunga, Maasin City, Southern Leyte, Philippines, 6600</p>
+            </div>
+        </div>
+        <div class="footer-links">
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#programs">Programs</a></li>
+                    <li><a href="#news-events">News & Events</a></li>
+                    <li><a href="pages/webinars.html">Webinars</a></li>
+                    <li><a href="#careers">Careers</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="https://online.sjc.edu.ph/enrollment/index.php" target="_blank">Student Portal</a></li>
+                    <li><a href="#">Faculty Directory</a></li>
+                    <li><a href="#">Research Publications</a></li>
+                    <li><a href="https://online.sjc.edu.ph/library/?content=opac" target="_blank">Library</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Connect</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com/profile.php?id=100083430218425" target="_blank">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="https://www.linkedin.com/school/saint-joseph-college-maasin-city/posts/?feedView=all" target="_blank">LinkedIn</a></li>
+                    <li><a href="https://www.instagram.com/explore/locations/562812642/saint-joseph-college-maasin-city/" target="_blank">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer-bottom">
+    <p>&copy; <span id="currentYear"></span> College of Computer Studies. All Rights Reserved.</p>
+    <div class="footer-bottom-links">
+        <a href="pages/privacy-policy.html">Privacy Policy</a>
+        <a href="pages/terms-of-service.html">Terms of Service</a>
+        <a href="pages/sitemap.html">Sitemap</a>
+    </div>
+</div>
+</div>
+</footer>
+
+<!-- Modals -->
+
+
+<!-- Chat Assistant -->
+<div id="chatAssistant" class="chat-assistant">
+<div class="chat-toggle" id="chatToggle">
+  <div class="chat-icon">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+    </svg>
+  </div>
+  <span class="chat-label">AI Assistant</span>
+</div>
+
+<div class="chat-window" id="chatWindow">
+  <div class="chat-header">
+    <div class="chat-header-info">
+      <div class="chat-avatar">
+        <img src="images/logo/ccs.png" alt="CCS Assistant">
+      </div>
+      <div class="chat-title">
+        <h3>CCS Tech Assistant</h3>
+        <span class="chat-status">Online</span>
+      </div>
+    </div>
+    <button class="chat-close" id="chatClose">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="18" y1="6" x2="6" y2="18"></line>
+        <line x1="6" y1="6" x2="18" y2="18"></line>
+      </svg>
+    </button>
+  </div>
+  
+  <div class="chat-messages" id="chatMessages"></div>
+  
+  <div class="chat-quick-questions" id="chatQuickQuestions">
+    <button class="quick-question" data-question="What programs does CCS offer?">Programs offered?</button>
+    <button class="quick-question" data-question="What are the admission requirements?">Admission info</button>
+    <button class="quick-question" data-question="How do CS and IT programs differ?">CS vs IT</button>
+    <button class="quick-question" data-question="What career opportunities are available?">Careers</button>
+  </div>
+  
+  <div class="chat-input-container">
+    <input type="text" id="chatInput" class="chat-input" placeholder="Type your question here...">
+    <button id="chatSend" class="chat-send">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="22" y1="2" x2="11" y2="13"></line>
+        <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+      </svg>
+    </button>
+  </div>
+</div>
+</div>
+
+<!-- JavaScript Files -->
+<script src="js/TagCloud.js"></script>
+<script src="js/main.js"></script>
+<script src="js/hero.js"></script>
+<script src="js/programs.js"></script>
+<script src="js/testimonials.js"></script>
+<script src="js/faculty.js"></script>
+<script src="js/contact.js"></script>
+<script src="js/modals.js"></script>
+<script src="js/chat-assistant.js"></script>
+<script>
+  document.getElementById('currentYear').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
+
