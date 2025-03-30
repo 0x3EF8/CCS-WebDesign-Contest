@@ -3,7 +3,11 @@ document.addEventListener("DOMContentLoaded", () => {
   setupFooterVisibilityCheck()
 })
 
+/**
+ * Initialize the chat assistant functionality
+ */
 function initChatAssistant() {
+  // DOM Elements
   const chatToggle = document.getElementById("chatToggle")
   const chatWindow = document.getElementById("chatWindow")
   const chatClose = document.getElementById("chatClose")
@@ -12,27 +16,35 @@ function initChatAssistant() {
   const chatMessages = document.getElementById("chatMessages")
   const quickQuestions = document.querySelectorAll(".quick-question")
 
-  // FAQ database
+  // FAQ database - Single source of truth for responses
   const faqResponses = {
+    // Greetings
     hello: "Hello! I'm the CCS Tech Assistant. How may I assist you with our Computer Science and IT programs?",
     hi: "Hi there! I'm the CCS Tech Assistant. How may I assist you with our Computer Science and IT programs?",
     hey: "Hello! I'm the CCS Tech Assistant. How may I assist you with our Computer Science and IT programs?",
 
+    // Program information
     "what programs does ccs offer":
       "The College of Computer Studies offers two primary undergraduate programs: BS Computer Science (BSCS) and BS Information Technology (BSIT). Both programs are designed with industry-aligned curricula to prepare students for careers in software development, data science, cybersecurity, and IT infrastructure management.",
 
+    // Admission information
     "what are the admission requirements":
       "Admission requirements include: High school diploma or equivalent, completed application form, entrance examination results, and an interview. For specific requirements and deadlines, please contact our admissions office at admissions@ccs.edu or visit the Contact section.",
 
+    // Program comparison
     "how do cs and it programs differ":
       "Computer Science focuses on computational theory, algorithms, and software engineering with a strong mathematical foundation. Information Technology emphasizes practical application, system administration, and information management. CS is more theory-oriented while IT is more application-focused. You can view a detailed curriculum comparison via the 'Compare Programs' button in the Programs section.",
 
+    // Career information
     "what career opportunities are available":
       "Our graduates pursue careers in: Software Development (Software Engineer, Full-Stack Developer, Mobile App Developer), Data Science & Analytics (Data Scientist, ML Engineer, BI Analyst), Cybersecurity (Security Analyst, Penetration Tester, Security Architect), and IT Management (IT Project Manager, CTO/CIO, DevOps Engineer).",
 
+    // Default response
     default:
       "I don't have specific information about that query in my knowledge base. For more detailed information, please contact our admissions office at admissions@ccs.edu or visit the Contact section of our website.",
   }
+
+  // Event Listeners
 
   // Toggle chat window visibility
   chatToggle.addEventListener("click", () => {
@@ -74,7 +86,9 @@ function initChatAssistant() {
     })
   })
 
-  // Function to send a message
+  /**
+   * Send a message from the user input
+   */
   function sendMessage() {
     const message = chatInput.value.trim()
 
@@ -93,7 +107,10 @@ function initChatAssistant() {
     }
   }
 
-  // Add a user message to the chat
+  /**
+   * Add a user message to the chat
+   * @param {string} message - The message text
+   */
   function addUserMessage(message) {
     const messageElement = document.createElement("div")
     messageElement.className = "chat-message user-message"
@@ -106,7 +123,10 @@ function initChatAssistant() {
     scrollToBottom()
   }
 
-  // Add a bot message to the chat
+  /**
+   * Add a bot message to the chat with typing animation
+   * @param {string} message - The message text
+   */
   function addBotMessage(message) {
     const messageElement = document.createElement("div")
     messageElement.className = "chat-message bot-message"
@@ -147,7 +167,11 @@ function initChatAssistant() {
     }, 1000)
   }
 
-  // Get bot response based on user input
+  /**
+   * Get bot response based on user input
+   * @param {string} message - The user's message
+   * @returns {string} - The bot's response
+   */
   function getBotResponse(message) {
     // Convert message to lowercase for case-insensitive matching
     const lowerMessage = message.toLowerCase()
@@ -187,7 +211,10 @@ function initChatAssistant() {
     return faqResponses["default"]
   }
 
-  // Get current time in HH:MM format
+  /**
+   * Get current time in HH:MM AM/PM format
+   * @returns {string} - Formatted time string
+   */
   function getCurrentTime() {
     const now = new Date()
     let hours = now.getHours()
@@ -201,13 +228,17 @@ function initChatAssistant() {
     return `${hours}:${minutes} ${ampm}`
   }
 
-  // Scroll chat to bottom
+  /**
+   * Scroll chat to bottom
+   */
   function scrollToBottom() {
     chatMessages.scrollTop = chatMessages.scrollHeight
   }
 }
 
-// Function to check if footer is visible and hide/show chat assistant accordingly
+/**
+ * Function to check if footer is visible and hide/show chat assistant accordingly
+ */
 function setupFooterVisibilityCheck() {
   const chatAssistant = document.getElementById("chatAssistant")
   const footer = document.querySelector("footer")
@@ -221,6 +252,9 @@ function setupFooterVisibilityCheck() {
   // Check on window resize
   window.addEventListener("resize", checkFooterVisibility)
 
+  /**
+   * Check if footer is visible in viewport and hide chat assistant if needed
+   */
   function checkFooterVisibility() {
     if (!chatAssistant || !footer) return
 

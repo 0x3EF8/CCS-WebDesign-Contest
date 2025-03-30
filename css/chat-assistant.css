@@ -1,3 +1,4 @@
+/* Chat Assistant Container */
 .chat-assistant {
   position: fixed;
   bottom: 20px;
@@ -13,6 +14,7 @@
   pointer-events: none;
 }
 
+/* Chat Toggle Button */
 .chat-toggle {
   display: flex;
   align-items: center;
@@ -48,6 +50,7 @@
   font-size: 13px;
 }
 
+/* Chat Window */
 .chat-window {
   position: fixed;
   bottom: 20px;
@@ -78,6 +81,7 @@
   opacity: 1;
 }
 
+/* Chat Header */
 .chat-header {
   display: flex;
   align-items: center;
@@ -137,6 +141,7 @@
   background-color: rgba(255, 255, 255, 0.2);
 }
 
+/* Chat Messages Area */
 .chat-messages {
   flex: 1;
   padding: 15px;
@@ -146,6 +151,7 @@
   gap: 15px;
 }
 
+/* Message Styling */
 .chat-message {
   display: flex;
   margin-bottom: 10px;
@@ -209,6 +215,7 @@
   text-align: right;
 }
 
+/* Typing Indicator */
 .typing-indicator .message-bubble {
   padding: 12px 15px;
   background-color: rgba(255, 255, 255, 0.1);
@@ -259,6 +266,7 @@
   }
 }
 
+/* Quick Questions */
 .chat-quick-questions {
   display: flex;
   flex-wrap: wrap;
@@ -295,6 +303,7 @@
   border-color: var(--primary-color);
 }
 
+/* Chat Input Area */
 .chat-input-container {
   display: flex;
   align-items: center;
@@ -356,6 +365,7 @@
   height: 16px;
 }
 
+/* Responsive Styles */
 @media (max-width: 480px) {
   .chat-window {
     width: calc(100% - 40px);
