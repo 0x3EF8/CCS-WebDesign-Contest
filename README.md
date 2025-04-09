@@ -100,20 +100,6 @@ The website implements WCAG 2.1 compliance efforts:
 - Efficient DOM manipulation
 - Loading screen for initial page load
 
-### CREDITS
------------------------------------------
-- Design Inspiration: Modern educational institution websites
-- Typography: Google Fonts (Poppins, Orbitron)
-- Icons: Lucide Icons (SVG)
-- Placeholder Images: placeholder.com
-
-### CONTACT INFORMATION
------------------------------------------
-College of Computer Studies
-Saint Joseph College
-Tunga-tunga, Maasin City, Southern Leyte, Philippines, 6600
-Email: ccs@sjc.edu.ph
-
 ### LICENSE
 -----------------------------------------
 This project is created for the Web Design Contest and is not licensed for public use without permission.
